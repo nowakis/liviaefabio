@@ -336,8 +336,8 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2015, 7, 12);
-	$('#countdown').countdown({until: theday, format: 'WDHMS'});
+	theday = new Date(2017, 9, 2);
+	$('#countdown').countdown({until: theday, format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
 		 
 	$('#date-countdown').countdown({until: theday, format: 'WDHMS'});

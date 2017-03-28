@@ -313,7 +313,7 @@ img.with-border{
 
 #nav-bar{
 	position:relative;
-	height:145px;
+	height:65px;
 	width:100%;
 	z-index:1000;
 	
@@ -354,7 +354,7 @@ img.with-border{
 
 #nav-bar.top-bar.stick-it{
 	position:fixed;
-	height:145px; 
+	height:65px; 
 	width:100%;
 	background-color:#FFF;
 	z-index:1500;
@@ -409,15 +409,15 @@ img.with-border{
 
 .logo-wrapper{
 	position:relative; 
-	width:60px; 
-	height:60px; 
-	margin-top:40px; 
+	width:45px; 
+	height:45px; 
+	margin-top:70px; 
 }
 
 #nav-menu{	
 	list-style-type:none; 
 	margin:0; 
-	padding:45px 0 0 0;
+	padding:5px 0 0 0; 
 	font-family: 'Oswald', sans-serif;
 	font-size:13px;
 	z-index:1000;
@@ -890,8 +890,8 @@ img.with-border{
 }
 
 .css-logo-text{
-	padding-top:19px; 
-	font-size:15px;
+	padding-top:12px; 
+	font-size:14px;
 }
 
 .css-logo-text > i {
@@ -3019,15 +3019,15 @@ button.mfp-close, button.mfp-arrow {
 }
 
 #nav-bar.top-bar.stick-it{
-	height:100px; 	
+	height:60px; 	
 }
 
 #nav-bar.bottom-bar.stick-it{
-	height:100px; 	
+	height:60px; 	
 }
 
 #nav-bar.bottom-bar.outside{
-	bottom:-100px;
+	bottom:-60px;
 }
 
 /* ----------------------------------------------*/
@@ -3037,7 +3037,7 @@ button.mfp-close, button.mfp-arrow {
 /* 02.1.2 Fluid-width */
 #nav-bar.fluid-width #nav-wrapper,
 #nav-bar.fixed-width #nav-wrapper{
-	padding:20px 30px
+	padding:8px 20px
 }
 
 /* ----------------------------------------------*/
@@ -3188,7 +3188,7 @@ button.mfp-close, button.mfp-arrow {
 	position:relative;
 	float:right;
 	font-size:28px;
-	margin-top:12px;
+	/*margin-top:12px;*/
 	z-index:1000;
 }
 
