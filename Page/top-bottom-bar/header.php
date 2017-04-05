@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+     	<meta name="description" content="">
+      	<meta name="author" content="www.nowakis.com">
+      	<title>Livia &amp; Fabio</title>
+        
+        <link rel="icon" href="images/favicon.jpg">
+        <!-- Bootstrap -->
+    	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen" />
+        <!-- Pace -->
+        <link rel="stylesheet" href="css/preloader.css"  media="screen">
+        <link rel="stylesheet" href="css/preloader-default.css"  media="screen">
+        <!-- Flexslider -->
+        <link rel="stylesheet" href="css/flexslider/flexslider.css" type="text/css">
+        <!-- Animate -->
+        <link rel="stylesheet" href="css/animate/animate.css" type="text/css">       
+        <!-- Countdown -->
+        <link rel="stylesheet" href="css/countdown/jquery.countdown.css" type="text/css">
+        <!-- Magnific Popup -->
+        <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" type="text/css">
+        <!-- Owl Carousel -->
+        <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css" type="text/css">
+        <link rel="stylesheet" href="css/owlcarousel/owl.theme.css" type="text/css">
+        <!-- Icon -->
+        <link rel="stylesheet" href="css/fonts/fontello/css/fontello.css" type="text/css" media="screen" />
+        <!-- Font -->
+        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        
+        <!-- Theme CSS -->
+    	<link href="css/style.css" rel="stylesheet" media="screen">
+        
+        <!-- Skin CSS -->
+    	<!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
+        <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
+        <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen">
+	</head>
+
+<?php
+$bodyClass = '';
+if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_SERVER['SCRIPT_NAME'] != '/index.php') {
+	$bodyClass = 'class="slider-title-page"';
+}
+?>
+	<body <?php echo $bodyClass ?>>
+    	<!--PRELOADER-->
+        <div id="preloader">
+        
+        	<div class="alignment">
+            	<div class="v-align center-middle"> 
+            		
+                    <!-- LEFT HEART -->
+            		<div class="heart-animation">                	
+            			<i class="de-icon-heart"></i>
+               	 	</div>
+                
+                	<!-- RIGHT HEART -->
+                	<div class="heart-animation-reverse">
+            			<i class="de-icon-heart"></i>
+                	</div>     
+                     
+                </div>
+            </div>
+            
+        </div> <!--END of PRELOADER-->
+       
+        
+        <!-- NAVIGATION --> 
+    	<header id="nav-header">
+        	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
+            	
+                <div id="nav-wrapper">
+            		
+                    <!-- LOGO -->
+            		<div class="logo-wrapper">
+                		<!-- CSS LOGO --> 
+                        <a href="index.html">
+                    		<div class="css-logo rounded">
+                   				<div class="css-logo-text">
+                        			<strong>L</strong><i class="de-icon-heart-1"></i><strong>F</strong>
+                    			</div>
+                    		</div>
+                        </a>
+                    
+                    	<!-- IMG LOGO 
+                    	<div class="img-logo">
+                    		<img src="images/slide1.jpg">
+                    	</div>-->
+                	</div>
+                	<!-- END of LOGO -->
+                    
+                    <div id="mobile-nav">
+                    	<i class="de-icon-menu"></i>
+                    </div>
+                
+                	<ul id="nav-menu">
+                		<li class="first-child">
+                        	<a href="/">INÍCIO</a>
+                        </li>
+
+                   		<li>
+                        	<a href="/#couple">CASAL</a>
+                        </li>
+
+                   		<li>
+                        	<a href="#">NOSSA HISTÓRIA</a>
+                        </li>
+
+                        <li>
+                        	<a href="#">GALERIA</a>
+                        </li>
+
+                    	<li  class="first-child split-margin"><a href="location.php">QUANDO E ONDE</a></li>
+
+                    	<li>
+                        	<a href="accommodation.php">HOSPEDAGEM</a>
+                        </li>
+
+                    	<li>
+                        	<a href="rsvp.php">RSVP</a>
+                        </li>
+                    	
+                        <li>
+                        	<a href="#">PRESENTES</a>
+                        </li>
+                	</ul>
+                    
+                    <div class="clearboth"></div>
+                    
+                </div>
+                
+            </nav>
+        </header> <!-- END of NAVIGATION -->

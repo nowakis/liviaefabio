@@ -1,135 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-     	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-     	<meta name="description" content="">
-      	<meta name="author" content="www.nowakis.com">
-      	<title>LIVIA &amp; FABIO</title>
-        
-        <link rel="icon" href="images/favicon.jpg">
-        <!-- Bootstrap -->
-    	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" type="text/css" media="screen" />
-        <!-- Pace -->
-        <link rel="stylesheet" href="css/preloader.css"  media="screen">
-        <link rel="stylesheet" href="css/preloader-default.css"  media="screen">
-        <!-- Flexslider -->
-        <link rel="stylesheet" href="css/flexslider/flexslider.css" type="text/css">
-        <!-- Animate -->
-        <link rel="stylesheet" href="css/animate/animate.css" type="text/css">       
-        <!-- Countdown -->
-        <link rel="stylesheet" href="css/countdown/jquery.countdown.css" type="text/css">
-        <!-- Magnific Popup -->
-        <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css" type="text/css">
-        <!-- Owl Carousel -->
-        <link rel="stylesheet" href="css/owlcarousel/owl.carousel.css" type="text/css">
-        <link rel="stylesheet" href="css/owlcarousel/owl.theme.css" type="text/css">
-        <!-- Icon -->
-        <link rel="stylesheet" href="css/fonts/fontello/css/fontello.css" type="text/css" media="screen" />
-        <!-- Font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        
-        <!-- Theme CSS -->
-    	<link href="css/style.css" rel="stylesheet" media="screen">
-        
-        <!-- Skin CSS -->
-    	<!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
-        <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
-        <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen">
-	</head>
+<?php
+require_once 'header.php';
+?>
 
-	<body>
-    	<!--PRELOADER-->
-        <div id="preloader">
-        
-        	<div class="alignment">
-            	<div class="v-align center-middle"> 
-            		
-                    <!-- LEFT HEART -->
-            		<div class="heart-animation">                	
-            			<i class="de-icon-heart"></i>
-               	 	</div>
-                
-                	<!-- RIGHT HEART -->
-                	<div class="heart-animation-reverse">
-            			<i class="de-icon-heart"></i>
-                	</div>     
-                     
-                </div>
-            </div>
-            
-        </div> <!--END of PRELOADER-->
-       
-        
-        <!-- NAVIGATION --> 
-    	<header id="nav-header">
-        	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
-            	
-                <div id="nav-wrapper">
-            		
-                    <!-- LOGO -->
-            		<div class="logo-wrapper">
-                		<!-- CSS LOGO --> 
-                        <a href="index.html">
-                    		<div class="css-logo rounded">
-                   				<div class="css-logo-text">
-                        			<strong>L</strong><i class="de-icon-heart-1"></i><strong>F</strong>
-                    			</div>
-                    		</div>
-                        </a>
-                    
-                    	<!-- IMG LOGO 
-                    	<div class="img-logo">
-                    		<img src="images/slide1.jpg">
-                    	</div>-->
-                	</div>
-                	<!-- END of LOGO -->
-                    
-                    <div id="mobile-nav">
-                    	<i class="de-icon-menu"></i>
-                    </div>
-                
-                	<ul id="nav-menu">
-                		<li class="first-child">
-                        	<a href="index.html">INÍCIO</a>
-                        </li>
-
-                   		<li>
-                        	<a href="#couple">CASAL</a>
-                        </li>
-
-                   		<li>
-                        	<a href="#">NOSSA HISTÓRIA</a>
-                        </li>
-
-                        <li>
-                        	<a href="#">GALERIA</a>
-                        </li>
-
-                    	<li  class="first-child split-margin"><a href="location.html">QUANDO E ONDE</a></li>
-
-                    	<li>
-                        	<a href="rsvp.html">HOSPEDAGEM</a>
-                        </li>
-
-                    	<li>
-                        	<a href="rsvp.html">RSVP</a>
-                        </li>
-                    	
-                        <li>
-                        	<a href="#">PRESENTES</a>
-                        </li>
-                	</ul>
-                    
-                    <div class="clearboth"></div>
-                    
-                </div>
-                
-            </nav>
-        </header> <!-- END of NAVIGATION -->
-        
        	<!-- MAIN SLIDER -->
     	<section id="main-slider" class="flexslider fullscreen">      	
             
@@ -352,10 +224,11 @@
                     	<div class="row">
                         	<div class="col-md-offset-1 col-md-10 text-center">
                     	
+							<!--
                 	 			<div class="banner-text light medium animation fadeInUp" style="letter-spacing:3px;">
                      				<h4>*** SANTUÁRIO NOSSA SENHORA DE FÁTIMA ***</h4>
                      			</div> 
-                          		
+                          	-->	
                                 <div class="animation fadeInUp">
                      			<div id="counting-down">
                      				<div id="counting">Contagem</div>
@@ -429,7 +302,7 @@
                         				<div class="photo-item">
 								
                              				<!--PHOTO-->
-                                			<img src="images/wedding/igreja-da-candelaria-rio-de-janeiro2.jpg" alt="" class="hover-animation image-zoom-in">
+                                			<img src="images/wedding/igreja-interna-1x1.jpg" alt="" class="hover-animation image-zoom-in">
                                             
                                				<!--PHOTO OVERLAY-->
                           					<div class="layer wh95 hidden-black-overlay hover-animation fade-in">
@@ -443,7 +316,7 @@
                                     			<div class="alignment">
                                     				<div class="v-align center-middle">
                                             
-                                     					<a href="location.html" class="de-button outline small">
+                                     					<a href="location.php" class="de-button outline small">
                                                 			VER LOCALIZAÇÃO
                                                 		</a>
                                                 
@@ -455,7 +328,7 @@
                                         
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
-                                        	<h3><a href="location.html">CERIMÔNIA</a></h3>
+                                        	<h3><a href="location.php">CERIMÔNIA</a></h3>
                                             <p>Conheça onde será a cerimônia</p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
@@ -484,7 +357,7 @@
                                     			<div class="alignment">
                                     				<div class="v-align center-middle">
                                             
-                                     					<a href="location.html" class="de-button outline small">
+                                     					<a href="location.php" class="de-button outline small">
                                                 			VER LOCALIZAÇÃO
                                                 		</a>
                                                 
@@ -496,7 +369,7 @@
                                         
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
-                                        	<h3><a href="location.html">RECEPÇÃO</a></h3>
+                                        	<h3><a href="location.php">RECEPÇÃO</a></h3>
                                             <p>Veja a localização da ceromônia</p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
@@ -510,7 +383,7 @@
                         				<div class="photo-item">
 								
                              				<!--PHOTO-->
-                                			<img src="images/wedding/Hotel-Avante-218-1200x800.jpg" alt="" class="hover-animation image-zoom-in">
+                                			<img src="images/wedding/genting-hotel-1x1.jpg" alt="" class="hover-animation image-zoom-in">
                                             
                                				<!--PHOTO OVERLAY-->
                            					<div class="layer wh95 hidden-black-overlay hover-animation fade-in">
@@ -525,7 +398,7 @@
                                     			<div class="alignment">
                                     				<div class="v-align center-middle">
                                             
-                                     					<a href="accomodation.html" class="de-button outline small">
+                                     					<a href="accomodation.php" class="de-button outline small">
                                                 			HOSPEDAGEM
                                                 		</a>
                                                 
@@ -537,7 +410,7 @@
                                         
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
-                                        	<h3><a href="accomodation.html">HOSPEDAGEM</a></h3>
+                                        	<h3><a href="accomodation.php">HOSPEDAGEM</a></h3>
                                             <p>Separamos algumas opções para hospedagem para quem não é de Vitória</p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
@@ -581,7 +454,7 @@
 									Não esqueça de confirmar sua presença até 01 de agosto de 2017
 								</p>
                                 
-                                <a href="rsvp.html" class="de-button medium animation fadeInUp">
+                                <a href="rsvp.php" class="de-button medium animation fadeInUp">
                                 	RSVP
                             	</a>
                             </div>
@@ -594,93 +467,8 @@
 			</section>
             
             
-            
-            
         </section>
         
-        <!-- FOOTER SECTION -->
-            <footer>
-            	<div class="image-divider fixed-height" style="background-image:url(images/vintage/IMG_8309.jpg);" data-stellar-background-ratio="0.5" >
-                
-                	<div class="divider-overlay"></div>
-                    
-                    <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
-                    <div class="alignment"> 
-                    	<div class="v-align center-middle">                  	
-                    
-                    		<div class="container">                 	 
-                    			<div class="row">
-                        			<div class="col-md-12">
-                          				
-                                        <div class="animation fadeInUp">
-                     						<div id="thank-you">
-                     							<div id="thank">Obrigado</div>
-                     						</div>
-                                        </div>
-                        
-                        				<div class="heart-divider animation delay1 fadeInUp">
-                        					<span class="white-line"></span>
-                        					<i class="de-icon-heart pink-heart"></i>
-                        					<i class="de-icon-heart white-heart"></i>
-                        					<span class="white-line"></span>
-                        				</div>
-                                    
-										<div id="footer-couple-name" class="animation delay1 fadeInUp">
-                                			LIVIA & FABIO
-                                		</div>
-                     
-                     				</div>
-                     			</div>
-                     		</div>
-                     
-                     	</div>
-                   	</div>
-                    
-                </div>
-            </footer>
-		<!-- jQuery -->
-    	<script src="js/jquery-1.11.1.min.js"></script>
-        <!-- Pace -->
-        <script src="js/pace/pace.min.js"></script> 
-    	<!-- Bootstrap -->
-    	<script src="js/bootstrap/bootstrap.js"></script>    
-        <!-- Modernizr -->
-        <script src="js/modernizr/modernizr.js"></script>  
-        <!-- Device JS -->
-        <script src="js/devicejs/device.js"></script>  
-        <!-- TinyNav -->
-        <script src="js/tinynav/tinynav.min.js"></script>
-        <!-- SmoothScroll -->
-        <script src="js/smoothscroll/jquery.smooth-scroll.js"></script>
-        <!-- Flexslider -->
-        <script src="js/flexslider/jquery.flexslider.js"></script>  
-        <!-- Sticky -->
-        <script src="js/sticky/jquery.sticky.js"></script>  
-        <!-- Waypoint -->
-        <script src="js/waypoint/jquery.waypoints.min.js"></script>
-        <!-- DoubleTapToGo -->
-        <script src="js/jquery-ui-widget/jquery.ui.widget.js"></script>
-        <script src="js/jquery-doubletaptogo/jquery.dcd.doubletaptogo.js"></script>
-        <!-- Vide -->
-        <script src="js/vide/jquery.vide.js"></script>
-        <!-- Stellar -->
-        <script src="js/stellar/jquery.stellar.js"></script>
-        <!-- Masonry -->
-        <script src="js/masonry/masonry.pkgd.min.js"></script>
-        <!-- Countdown -->
-        <script src="js/countdown/jquery.plugin.js"></script>
-        <script src="js/countdown/jquery.countdown.js"></script>
-        <!-- Countdown Labels / Localisation -->
-        <script src="js/countdown/jquery.countdown-custom-label.js"></script>
-        <!-- Magnific Popup -->
-        <script src="js/magnific-popup/jquery.magnific-popup.js"></script>
-        <!-- Owl Carousel -->
-        <script src="js/owlcarousel/owl.carousel.js"></script>
-        
-        <!-- Custom Core Script -->
-        <script type="text/javascript" src="js/script.js"></script>        
-        <!-- Custom Additional Script -->
-        <script type="text/javascript" src="js/main-slider-image-animation.js"></script>
-        
-	</body>
-</html>
+<?php
+require_once 'footer.php';
+?>
