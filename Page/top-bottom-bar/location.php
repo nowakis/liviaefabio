@@ -66,11 +66,9 @@ require_once 'header.php';
                     
                     	<div class="white-box-content-wrapper animation fadeInLeft">
                         	<h3>CERIMÔNIA RELIGIOSA</h3>
-                            <p>Santuário Nossa Senhora do Rosário de Fátima</p>
-                            <p>Rua Maria Delunardo Trancoso, s/n - Serra - ES<br />
-                            Dia 02/09/2017<br />
-                            Horário: 19h30<br />
-                            </p> 
+                            <p class='strong no-margin'>Santuário Nossa Senhora do Rosário de Fátima</p>
+                            <p>Rua Maria Delunardo Trancoso, s/n - Serra - ES</p>
+                            <p>Dia 02/09/2017 às  19h30</p>
                             <img src="images/wedding/igreja-interna-4x3.jpg" alt="" class="fullwidth">
                         </div>
                     	
@@ -80,7 +78,7 @@ require_once 'header.php';
                     
                     	<div class="white-box-content-wrapper animation fadeInRight">
                         	<h3>RECEPÇÃO E FESTA</h3>
-                            <p>Após a cerimônia religiosa, vamos receber os convidados no Cerimonial Lago de Garda</p>
+                            <p>Após a cerimônia religiosa, vamos receber os convidados no <strong>Cerimonial Lago de Garda</strong></p>
                     		<p>Rua Carlos Martins, 781 - Jardim Camburi, Vitória - ES</p> 
                             <img src="images/wedding/img_45321-4x3.jpg" alt="" class="fullwidth">
                         </div>
