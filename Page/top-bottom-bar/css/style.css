@@ -200,7 +200,7 @@
 /* 01. GENERAL			 						 */
 /*===============================================*/
 body{
-	font-family: 'Arvo', serif;	
+	font-family: 'Poppins', serif;	
 	color:#6a6a6a;
 	font-size:15px;
 }
@@ -262,9 +262,9 @@ h4.inline, h5.inline, h6.inline{
 }
 
 p{
-	font-family: 'Arvo', serif;	
-	font-size:15px;
-	line-height:26px;
+	font-family: 'Poppins', serif;	
+	font-size:14px;
+	line-height:22px;
 	margin-bottom:25px;
 }
 
@@ -272,6 +272,10 @@ p.lead{
 	font-size:19px;
 	line-height:28px;
 	font-weight:normal;
+}
+
+p.small {
+	font-size:12px;
 }
 
 a{
@@ -3719,5 +3723,4 @@ footer .image-divider.fixed-height{
 	color:#FFF; 
 	letter-spacing:3px; 
 	margin-top:10px;
-}
 }

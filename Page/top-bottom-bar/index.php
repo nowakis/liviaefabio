@@ -114,11 +114,12 @@ require_once 'header.php';
                         		<h1>
                             		O CASAL
                             	</h1>
-                            
+
+<!--                            
                             	<p class="blurb">
                             		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus.
                            	 	</p>
-                            
+-->                            
                             	<div class="heart-divider">
                             		<span class="grey-line"></span>
                               		<i class="de-icon-heart pink-heart"></i>
@@ -272,10 +273,12 @@ require_once 'header.php';
                             		O CASAMENTO
                             	</h2>
                             
+							<!--
                             	<p class="blurb">
                             		Lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing
                             	</p>
-                            
+                            -->
+							
                             	<div class="heart-divider">
                             		<span class="grey-line"></span>
                               		<i class="de-icon-heart pink-heart"></i>

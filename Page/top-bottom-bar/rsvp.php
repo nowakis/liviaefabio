@@ -83,6 +83,21 @@ require_once 'header.php';
     							<input type="name" id="inputname"  class="form-control ajax-input" placeholder="" data-required="Nome obrigatório" data-output-label="Nome">
                           	</div>
  						</div>
+
+                        <div class="form-group">
+                            <label>*VOCÊ IRÁ PARTICIPAR?</label>
+                           	<div id="input-radio-inline-custom-icon" class="ajax-input ajax-radio" data-required="Preencher este campo." data-output-label="input-radio-inline-custom - 2">
+                            	<div data-toggle="buttons">
+  									<label class="btn btn-primary custom-option-icon">
+    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon1" value="yes"> Sim, conte comigo
+  									</label>
+                               		<label class="btn btn-primary custom-option-icon">
+    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon2" value="not"> Não poderei participar
+  									</label>
+                                </div>
+							</div> 
+                       	</div>
+
                         <div class="form-group">
     						<label for="inputname">*TELEFONE</label>
                             <div class="input-group">

@@ -27,10 +27,12 @@
         <!-- Icon -->
         <link rel="stylesheet" href="css/fonts/fontello/css/fontello.css" type="text/css" media="screen" />
         <!-- Font -->
-        <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-        
+        <link href='//fonts.googleapis.com/css?family=Oswald:200,400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href="//fonts.googleapis.com/css?family=Comfortaa%7CScope+One%7CTangerine:700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
         <!-- Theme CSS -->
     	<link href="css/style.css" rel="stylesheet" media="screen">
         
@@ -103,27 +105,29 @@ if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_S
                         </li>
 
                    		<li>
-                        	<a href="/#couple">CASAL</a>
-                        </li>
-
-                   		<li>
-                        	<a href="#">NOSSA HISTÓRIA</a>
+                        	<a href="/#couple">O CASAL</a>
                         </li>
 
                         <li>
                         	<a href="#">GALERIA</a>
                         </li>
 
-                    	<li  class="first-child split-margin"><a href="location.php">QUANDO E ONDE</a></li>
+                    	<li>
+							<a href="location.php">QUANDO E ONDE</a>
+						</li>
+
+                    	<li class="first-child split-margin" >
+                        	<a href="accommodation.php">HOSPEDAGEM</a>
+                        </li>
 
                     	<li>
-                        	<a href="accommodation.php">HOSPEDAGEM</a>
+                        	<a href="#dicas">DICAS</a>
                         </li>
 
                     	<li>
                         	<a href="rsvp.php">RSVP</a>
                         </li>
-                    	
+
                         <li>
                         	<a href="#">PRESENTES</a>
                         </li>

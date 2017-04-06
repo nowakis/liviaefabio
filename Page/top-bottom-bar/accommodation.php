@@ -75,10 +75,9 @@ require_once 'header.php';
                 	<div class="col-md-offset-1 col-md-5 no-padding">
                     	<div style="background-color:#FFF; padding:46px">
                         	<h3>HOTEL BRISTOL ALAMEDA</h3>
-                            <span>Orla Praia Camburi<br/><br/></span>
-                    		<p>
-                        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin 
-							</p> 
+							<p>Av. Dante Michelini, 585 - Jardim da Penha, Vitória</p>
+							<p>(27) 3204-6600</p>
+							<a href='http://www.bristolhotels.com.br/alameda-vitoria/hotel-overview.html'>http://www.bristolhotels.com.br/</a>
                         </div>                      
                     </div>
                     <div class="col-md-5 no-padding">
@@ -90,11 +89,10 @@ require_once 'header.php';
                 <div class="row animation fadeIn" style="padding-bottom:60px">
                 	<div class="col-md-offset-1 col-md-5 no-padding">
                     	<div style="background-color:#FFF; padding:46px">
-                        	<h3>HOTEL HIBIS</h3>
-                            <span>Orla de Camburi<br/><br/></span>
-                    		<p>
-                        		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices malesuada ante quis pharetra. Nullam non bibendum dolor. Ut vel turpis accumsan, efficitur dolor fermentum, tincidunt metus. Etiam ut ultrices nibh.  Etiam aliquam mauris non hendrerit faucibus. Proin 
-							</p> 
+                        	<h3>HOTEL IBIS</h3>
+                    		<p>Av. Dante Michelini, 791 - Praia De Camburi, Vitória</p>
+							<p>(27) 3203-5450</p>
+							<p><a href='http://www.accorhotels.com/gb/hotel-7437-ibis-vitoria-praia-de-camburi/index.shtml'>http://www.accorhotels.com/</p>
                         </div>                      
                     </div>
                     <div class="col-md-5 no-padding">
