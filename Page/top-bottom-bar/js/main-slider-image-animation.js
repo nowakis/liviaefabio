@@ -8,7 +8,7 @@
 			animation : "fade",
 			controlNav: false,
 			directionNav: true,
-			slideshowSpeed: 10000,  
+			slideshowSpeed: 4000,  
 			animationSpeed:2000,
 			pauseOnAction: false,
 			animationLoop: true, 

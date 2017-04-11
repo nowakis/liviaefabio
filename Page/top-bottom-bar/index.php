@@ -51,11 +51,13 @@ require_once 'header.php';
 				<li>
 						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_7596.jpg);"></div>
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
-				</li>  
+				</li> 
+				<!-- 
 				<li>
 						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_7849.jpg);"></div>
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
 				</li>
+				-->
 				<!--  
 				<li>
 						<div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(images/vintage/IMG_8131.jpg);"></div>
@@ -70,6 +72,10 @@ require_once 'header.php';
 						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_8377.jpg);"></div>
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
 				</li>  
+				<li>
+						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_7088.jpg);"></div>
+						<div class="slide-overlay" style="opacity:0.2"> </div> 
+				</li> 
 				<li>
 						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_8915.jpg);"></div>
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
@@ -87,7 +93,7 @@ require_once 'header.php';
             		</div>
         		</a>
                 
-                <audio id="audioID" src="audio/The-Wedding-Song-Matthew-Mole.mp3" autoplay loop>
+                <audio id="audioID" src="audio/The-Wedding-Song-Matthew-Mole.mp3"  loop> <!-- autoplay -->
 					Your browser does not support the audio element.
 				</audio>
             </div>
@@ -305,7 +311,7 @@ require_once 'header.php';
                         				<div class="photo-item">
 								
                              				<!--PHOTO-->
-                                			<img src="images/wedding/igreja-interna-1x1.jpg" alt="" class="hover-animation image-zoom-in">
+                                			<img src="images/wedding/igreja-fatima-1x1.jpg" alt="" class="hover-animation image-zoom-in">
                                             
                                				<!--PHOTO OVERLAY-->
                           					<div class="layer wh95 hidden-black-overlay hover-animation fade-in">

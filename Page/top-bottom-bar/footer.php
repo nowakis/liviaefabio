@@ -14,11 +14,13 @@
                     			<div class="row">
                         			<div class="col-md-12">
                           				
+                                          <!--
                                         <div class="animation fadeInUp">
                      						<div id="thank-you">
                      							<div id="thank">Obrigado</div>
                      						</div>
                                         </div>
+                                        -->
                         
                         				<div class="heart-divider animation delay1 fadeInUp">
                         					<span class="white-line"></span>
@@ -81,8 +83,45 @@
         
         <!-- Custom Core Script -->
         <script type="text/javascript" src="js/script.js"></script>        
-        <!-- Custom Additional Script -->
-        <script type="text/javascript" src="js/main-slider-image-animation.js"></script>
         
+        <!-- Custom Additional Script -->
+        <?php
+		if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') { ?>
+            <script type="text/javascript" src="js/main-slider-fade.js"></script>
+        <?php } else { ?>
+            <script type="text/javascript" src="js/main-slider-image-animation.js"></script>
+        <?php } ?>
+
+
+        <!-- Mascara --> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js" type="text/javascript"></script>        
+
+		<script type="text/javascript">
+			$(function() {
+				$.mask.definitions['~'] = "[+-]";
+				$("#phone").mask("(99) ?999-9999");
+				$("#phoneExt").mask("(999) 999-9999? x99999");
+				$("#iphone").mask("+33 999 999 999");
+				$("#tin").mask("99-9999999");
+				$("#ssn").mask("999-99-9999");
+				$("#product").mask("a*-999-a999", { placeholder: " " });
+				$("#eyescript").mask("~9.99 ~9.99 999");
+				$("#po").mask("PO: aaa-999-***");
+				$("#pct").mask("99%");
+				$("#phoneAutoclearFalse").mask("(999) 999-9999", { autoclear: false, completed:function(){alert("completed autoclear!");} });
+				$("#phoneExtAutoclearFalse").mask("(999) 999-9999? x99999", { autoclear: false });
+			});
+		</script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-96357517-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+
 	</body>
 </html>

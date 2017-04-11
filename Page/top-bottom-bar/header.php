@@ -40,12 +40,25 @@
     	<!-- <link href="css/skin/light-teal/light-teal.css" rel="stylesheet" media="screen"> -->
         <!-- <link href="css/skin/light-teal/light-teal-reverse-navbar.css" rel="stylesheet" media="screen"> -->
         <link href="css/skin/pattern/pattern-1.css" rel="stylesheet" media="screen">
+
+		<?php
+		if ($_SERVER['SCRIPT_NAME'] == 'gallery.php') {
+			echo '
+			<style>
+				html { overflow-y: scroll; }
+			</style>
+			';
+		}
+		?>
 	</head>
 
 <?php
 $bodyClass = '';
 if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_SERVER['SCRIPT_NAME'] != '/index.php') {
 	$bodyClass = 'class="slider-title-page"';
+}
+if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
+	$bodyClass = 'class="full-gallery-page"';
 }
 ?>
 	<body <?php echo $bodyClass ?>>
@@ -71,9 +84,16 @@ if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_S
         </div> <!--END of PRELOADER-->
        
         
+		<?php
+		$menuOption = '';
+		if ($_SERVER['SCRIPT_NAME'] != '/gallery.php') {
+			$menuOption = 'transparent';
+		}
+		?>
+
         <!-- NAVIGATION --> 
     	<header id="nav-header">
-        	<nav id="nav-bar" class="top-bar fluid-width transparent nav-center sticky-nav animation fadeInDown">
+        	<nav id="nav-bar" class="top-bar fluid-width <?php echo $menuOption ?> nav-center sticky-nav animation fadeInDown">
             	
                 <div id="nav-wrapper">
             		
@@ -105,11 +125,11 @@ if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_S
                         </li>
 
                    		<li>
-                        	<a href="/#couple">O CASAL</a>
+                        	<a href="the-story.php">NOSSA HISTÓRIA</a>
                         </li>
 
                         <li>
-                        	<a href="#">GALERIA</a>
+                        	<a href="gallery.php">GALERIA</a>
                         </li>
 
                     	<li>
@@ -125,7 +145,7 @@ if ($_SERVER['SCRIPT_NAME'] != '/' && $_SERVER['SCRIPT_NAME'] != '/index' && $_S
                         </li>
 
                     	<li>
-                        	<a href="rsvp.php">RSVP</a>
+                        	<a href="rsvp.php">PRESENÇA</a>
                         </li>
 
                         <li>

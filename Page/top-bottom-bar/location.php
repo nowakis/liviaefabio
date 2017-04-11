@@ -69,7 +69,7 @@ require_once 'header.php';
                             <p class='strong no-margin'>Santuário Nossa Senhora do Rosário de Fátima</p>
                             <p>Rua Maria Delunardo Trancoso, s/n - Serra - ES</p>
                             <p>Dia 02/09/2017 às  19h30</p>
-                            <img src="images/wedding/igreja-interna-4x3.jpg" alt="" class="fullwidth">
+                            <img src="images/wedding/igreja-fatima-4x43.jpg" alt="" class="fullwidth">
                         </div>
                     	
                     </div>

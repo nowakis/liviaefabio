@@ -89,7 +89,7 @@ require_once 'header.php';
                 <div class="row animation fadeIn" style="padding-bottom:60px">
                 	<div class="col-md-offset-1 col-md-5 no-padding">
                     	<div style="background-color:#FFF; padding:46px">
-                        	<h3>HOTEL IBIS</h3>
+                        	<h3>HOTEL IBIS VITÓRIA</h3>
                     		<p>Av. Dante Michelini, 791 - Praia De Camburi, Vitória</p>
 							<p>(27) 3203-5450</p>
 							<p><a href='http://www.accorhotels.com/gb/hotel-7437-ibis-vitoria-praia-de-camburi/index.shtml'>http://www.accorhotels.com/</p>
@@ -100,6 +100,37 @@ require_once 'header.php';
                     </div>
 				</div><!--END of TEXT SECTION-->
                 
+                <!--ACCOMODTION-3-->
+                <div class="row animation fadeIn" style="padding-bottom:60px">
+                	<div class="col-md-offset-1 col-md-5 no-padding">
+                    	<div style="background-color:#FFF; padding:46px">
+                        	<h3>MERCURE VITORIA HOTEL</h3>
+                    		<p>R. Aleixo Netto, 1385 - Praia do Canto, Vitória</p>
+							<p>(27) 3183-6000</p>
+							<p><a href='http://www.accorhotels.com/gb/hotel-5472-mercure-vitoria-hotel/index.shtml'>http://www.accorhotels.com/</p>
+                        </div>                      
+                    </div>
+                    <div class="col-md-5 no-padding">
+                    	<img src="images/wedding/hotel-mercure.jpeg" class="fullwidth" alt="">
+                    </div>
+				</div><!--END of TEXT SECTION-->
+
+                <!--ACCOMODTION-3-->
+                <div class="row animation fadeIn" style="padding-bottom:60px">
+                	<div class="col-md-offset-1 col-md-5 no-padding">
+                    	<div style="background-color:#FFF; padding:46px">
+                        	<h3>COMFORT SUITES VITÓRIA</h3>
+                    		<p>Av. Saturnino de Brito, 1327 - Santa Helena, Vitória</p>
+							<p>(27) 3183-2500</p>
+							<p><a href='http://www.atlanticahotels.com.br/hotel/vitoria/comfort-suites-vitoria'>http://www.atlanticahotels.com.br/</p>
+                        </div>                      
+                    </div>
+                    <div class="col-md-5 no-padding">
+                    	<img src="images/wedding/hotel-Comfort-Suites-vitoria.jpg" class="fullwidth" alt="">
+                    </div>
+				</div><!--END of TEXT SECTION-->				
+                
+
            	</div><!-- END of CONTAINER -->    
                         
         </section> <!--END of CONTENT SECTION-->        

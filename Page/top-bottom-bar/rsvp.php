@@ -89,7 +89,7 @@ require_once 'header.php';
                            	<div id="input-radio-inline-custom-icon" class="ajax-input ajax-radio" data-required="Preencher este campo." data-output-label="input-radio-inline-custom - 2">
                             	<div data-toggle="buttons">
   									<label class="btn btn-primary custom-option-icon">
-    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon1" value="yes"> Sim, conte comigo
+    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon1" value="yes"> Sim
   									</label>
                                		<label class="btn btn-primary custom-option-icon">
     									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon2" value="not"> Não poderei participar
@@ -102,17 +102,22 @@ require_once 'header.php';
     						<label for="inputname">*TELEFONE</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-    							<input type="phone" id="inputphone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
+    							<input type="phone" id="phone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
                           	</div>
  						</div>                                                
                         <div class="form-group">
     						<label for="inputemail">*EMAIL</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-mail"></i></div>
-    							<input type="email" id="inputemail"  class="form-control ajax-input" placeholder="" data-required="Email obrigatório" data-output-label="Output Email">
+    							<input type="email" id="email"  class="form-control ajax-input" placeholder="" data-required="Email obrigatório" data-output-label="Output Email">
                           	</div>
  						</div>                    
-                        
+
+		                <div class="form-group">
+    						<label for="inputmessage">NOME DOS ACOMPANHANTES</label>
+    						<textarea id="guest" class="form-control ajax-input" rows="4" data-output-label="Output Message"></textarea>
+ 						</div> 
+						               
                         <div class="form-group">
     						<label for="inputmessage">DEIXE SUA MENSAGEM</label>
     						<textarea id="message" class="form-control ajax-input" rows="4" data-output-label="Output Message"></textarea>
@@ -131,7 +136,7 @@ require_once 'header.php';
            	</div><!-- END of CONTAINER -->    
                         
         </section> <!--END of CONTENT SECTION-->        
-        
+
 <?php
 require_once 'footer.php';
 ?>
