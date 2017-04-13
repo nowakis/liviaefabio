@@ -47,7 +47,7 @@ require_once 'header.php';
             <!-- MAIN SLIDER IMAGES -->            
   			<div class="slides">
     				<!-- SLIDE IMAGE -->
-                	<div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(images/wedding/genting-hotel.jpg);">
+                	<div data-stellar-ratio="0.5" class="slide-image" style="background-image:url(images/wedding/genting-hotel-x.jpg);">
                     </div>
                     
                     <div class="slide-overlay"> </div>    

@@ -73,6 +73,14 @@ require_once 'header.php';
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
 				</li>  
 				<li>
+						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/LiviaFabio_Paris-11.jpg);"></div>
+						<div class="slide-overlay" style="opacity:0.2"> </div> 
+				</li>
+				<li>
+						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/LíviaFabio_Paris-11-x.jpg);"></div>
+						<div class="slide-overlay" style="opacity:0.2"> </div> 
+				</li>
+				<li>
 						<div data-stellar-ratio="0.5" class="slide-image loop-animation zoom" style="background-image:url(images/vintage/IMG_7088.jpg);"></div>
 						<div class="slide-overlay" style="opacity:0.2"> </div> 
 				</li> 
