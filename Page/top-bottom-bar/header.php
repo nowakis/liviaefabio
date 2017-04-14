@@ -141,7 +141,7 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
                         </li>
 
                     	<li>
-                        	<a href="#dicas">DICAS</a>
+                        	<a href="vitoria.php">VITÓRIA</a>
                         </li>
 
                     	<li>
