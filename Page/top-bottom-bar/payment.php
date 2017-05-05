@@ -108,8 +108,8 @@ function randHash($len=32)
   <input name="buyerFullName" type="hidden"  value="<?php echo $order->buyerName?>" >
   <input name="buyerEmail"    type="hidden"  value="<?php echo $order->buyerEmail?>" >
   <input name="telephone"    type="hidden"  value="<?php echo $order->buyerPhone?>" >
-  <input name="confirmationUrl" type="hidden"  value="http://requestb.in/1jbbebm1" >
-  <input name="responseUrl" type="hidden"  value="http://requestb.in/125o1gt1" >
+  <input name="confirmationUrl" type="hidden"  value="http://www.liviaefabio.com.br/wedding/order/callback" >
+  <input name="responseUrl" type="hidden"  value="http://www.liviaefabio.com.br/confirmation.php" >
 </form>
 
 <script type="text/javascript">
