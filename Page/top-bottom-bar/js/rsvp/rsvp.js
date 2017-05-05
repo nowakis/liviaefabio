@@ -36,8 +36,6 @@
 			//DEFINE OBJECT VARIABLE FOR SAVE ALL INPUT VALUE AND DATA-REQUIRED MESSAGE
 			var post_data = {};			
 			/*var post_data1 = { inputname: $('#inputname').val()};*/
-			
-						
 					
 			//LOOPING TO SAVE ALL INPUT VALUE, DATA-REQUIRED MESSAGE, AND ADD/REMOVE HAS-ERROR CLASS
 			$.each(ajax_input_element , function(index, element){

@@ -86,7 +86,7 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
         
 		<?php
 		$menuOption = '';
-		if ($_SERVER['SCRIPT_NAME'] != '/gallery.php') {
+		if ($_SERVER['SCRIPT_NAME'] != '/gallery.php' && $_SERVER['SCRIPT_NAME'] != '/shop.php' && $_SERVER['SCRIPT_NAME'] != '/confirmation.php') {
 			$menuOption = 'transparent';
 		}
 		?>
@@ -133,23 +133,19 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
                         </li>
 
                     	<li>
-							<a href="location.php">QUANDO E ONDE</a>
+                        	<a href="vitoria.php">VITÓRIA-ES</a>
 						</li>
 
                     	<li class="first-child split-margin" >
-                        	<a href="accommodation.php">HOSPEDAGEM</a>
+							<a href="location.php">QUANDO E ONDE</a>
                         </li>
 
                     	<li>
-                        	<a href="vitoria.php">VITÓRIA</a>
-                        </li>
-
-                    	<li>
-                        	<a href="rsvp.php">PRESENÇA</a>
+                        	<a href="rsvp.php">CONFIRME SUA PRESENÇA</a>
                         </li>
 
                         <li>
-                        	<a href="#">PRESENTES</a>
+                        	<a href="gift.php">PRESENTES</a>
                         </li>
                 	</ul>
                     

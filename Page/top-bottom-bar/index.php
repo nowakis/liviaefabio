@@ -33,7 +33,11 @@ require_once 'header.php';
                                         <span class="white-line" style="width:10px"></span>
                                     </div>
                                     <div class="clearboth"></div>   
-                                                            
+
+									<a href="#content" class="smooth-scroll">                                        	
+            							<i class="de-icon-down-open-big" style="font-size:40px; color:#FFF"></i>                                            
+        							</a>
+
 								</div> 
 							</div>
 						</div>
@@ -265,6 +269,10 @@ require_once 'header.php';
                                     
 								<div id="countdown" class="simple-countdown animation fadeInUp"></div>
                      
+					 			<div class='add-agenda'>
+ 									<p><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NzVvM3YydDEzbzdvbHNsY2s2aGdoYWU2NnMgZmFiaW8ubm93YWtpQG0&amp;tmsrc=fabio.nowaki%40gmail.com">Adicione em sua agenda <img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a></p>
+								</div>
+
                      		</div>
                      	</div>
                      </div>
@@ -304,6 +312,7 @@ require_once 'header.php';
                                		<i class="de-icon-heart grey-heart"></i>
                               		<span class="grey-line"></span>
                         		</div>
+
                           	</div>
                         </div>
                    </div> <!-- END of ROW-1 -->
@@ -351,7 +360,9 @@ require_once 'header.php';
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
                                         	<h3><a href="location.php">CERIMÔNIA</a></h3>
-                                            <p>Conheça onde será a cerimônia</p>
+											<p class='strong no-margin'>Santuário Nossa Senhora do Rosário de Fátima</p>
+											<p>Rua Maria Delunardo Trancoso, s/n - Serra - ES</p>
+											<p>Dia 02 de Setembro às <strong>19h30</strong></p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
                                          
@@ -392,7 +403,8 @@ require_once 'header.php';
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
                                         	<h3><a href="location.php">RECEPÇÃO</a></h3>
-                                            <p>Veja a localização da ceromônia</p>
+											<p>Após a cerimônia religiosa, vamos receber os convidados no <strong>Cerimonial Lago de Garda</strong></p>
+											<p>Rua Carlos Martins, 781 - Jardim Camburi, Vitória - ES</p> 
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
                                          
@@ -420,7 +432,7 @@ require_once 'header.php';
                                     			<div class="alignment">
                                     				<div class="v-align center-middle">
                                             
-                                     					<a href="accomodation.php" class="de-button outline small">
+                                     					<a href="accommodation.php" class="de-button outline small">
                                                 			HOSPEDAGEM
                                                 		</a>
                                                 
@@ -433,7 +445,7 @@ require_once 'header.php';
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
                                         	<h3><a href="accomodation.php">HOSPEDAGEM</a></h3>
-                                            <p>Separamos algumas opções para hospedagem para quem não é de Vitória</p>
+                                            <p>Separamos algumas opções de hospedagem para quem não é de Vitória</p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
                                         
@@ -473,7 +485,7 @@ require_once 'header.php';
 								</h2>
                             
 								<p>
-									Não esqueça de confirmar sua presença até 01 de agosto de 2017
+									Não esqueça de confirmar sua presença até 07 de agosto de 2017
 								</p>
                                 
                                 <a href="rsvp.php" class="de-button medium animation fadeInUp">

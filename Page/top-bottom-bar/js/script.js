@@ -336,7 +336,7 @@ $(document).ready(function() {
 	// 07. COUNTDOWN
 	//===================================================================================
 	var theday = new Date();
-	theday = new Date(2017, 9, 2);
+	theday = new Date(2017, 8, 2);
 	$('#countdown').countdown({until: theday, format: 'DHMS'});
 	$('#countdown').countdown($.countdown.regionalOptions['custom-label']); 
 		 
@@ -416,6 +416,16 @@ $(document).ready(function() {
 		}
 	}
 		
+
+	// ### SHOP FORM
+	//if ($("#submitButton").length){
+	//	$("#submitButton").validForm();
+	//}
+	
+	if ($("#shopform").length){
+		$("#shopform").validForm();
+	}
+
 		
 	// 11. RSVP
 	//==================================================================================

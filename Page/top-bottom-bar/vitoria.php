@@ -33,9 +33,13 @@ require_once "header.php";
                         					No dia 8 de setembro de 1551 era fundada a cidade de Vitória, capital do estado do Espírito Santo, e uma das três ilhas-capitais do Brasil. Com uma população de 330 mil habitantes, além da ilha principal, Vitória, fazem parte do município outras 34 ilhas e uma porção continental. 
                        	 				</p>
 											<p>
-											A cidade possui dois grandes portos, o Porto de Vitória e o Porto de Tubarão, e são considerados os melhores do país. A capital capixaba também conta com diversas praias, que não são muito extensas por causa do tamanho da ilha. Entre as mais conhecidas está a Praia de Camburi.
+											A cidade possui dois grandes portos, o Porto de Vitória e o Porto de Tubarão, e são considerados os melhores do país. A capital capixaba LATAMbém conta com diversas praias, que não são muito extensas por causa do LATAManho da ilha. Entre as mais conhecidas está a Praia de Camburi.
 											</p>
                                         
+										<a href="#content" class="smooth-scroll">                                        	
+            								<i class="de-icon-down-open-big" style="font-size:40px; color:#FFF"></i>                                            
+        								</a>
+
 									</div>
                         
 								</div>
@@ -69,6 +73,24 @@ require_once "header.php";
             <!-- CONTAINER -->            
            	<div class="container">
                 
+				<!-- PARAGRAPH LEAD TITLE -->
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 text-center">
+				
+						<div class="section-title">
+							<h2>PRAIAS</h2>
+													
+							<div class="heart-divider">
+								<span class="grey-line"></span>
+								<i class="de-icon-heart pink-heart"></i>
+								<i class="de-icon-heart grey-heart"></i>
+								<span class="grey-line"></span>
+							</div>
+						</div>
+					
+					</div>
+				</div><!-- END of PARAGRAPH LEAD TITLE -->    
+
                 <!-- BLOG -->
             	<div class="row">
                 
@@ -162,7 +184,29 @@ require_once "header.php";
                         </div><!-- END of TITLE & EXCERPT -->
                         
            			</div> <!-- END of BLOG ITEM-3 -->
-                    
+				
+				</div>
+
+				<!-- PARAGRAPH LEAD TITLE -->
+				<div class="row">
+					<div class="col-md-offset-3 col-md-6 text-center">
+				
+						<div class="section-title">
+							<h2>PONTOS TURÍSTICOS</h2>
+													
+							<div class="heart-divider">
+								<span class="grey-line"></span>
+								<i class="de-icon-heart pink-heart"></i>
+								<i class="de-icon-heart grey-heart"></i>
+								<span class="grey-line"></span>
+							</div>
+						</div>
+					
+					</div>
+				</div><!-- END of PARAGRAPH LEAD TITLE -->    
+
+                <!-- BLOG -->
+            	<div class="row">					
 					
 
                 	<!-- BLOG ITEM-1 -->
@@ -278,43 +322,13 @@ require_once "header.php";
             					<i class="de-icon-heart"></i>
             				</div>
                         	<h3>PARQUE PEDRA DA CEBOLA</h3>
-                          	<p>Uma das áreas verdes mais belas da cidade de Vitória. A origem do nome do parque deriva de uma grande pedra esculpida pela natureza que repousa sobre outra rocha, e que devido a seu comportamento geológico se “descama” de maneira similar as palhas de uma cebola.</p>
+                          	<p>Uma das áreas verdes mais belas da cidade de Vitória. A origem do nome do parque deriva de uma grande pedra esculpida pela natureza que repousa sobre outra rocha, e que devido a seu comporLATAMento geológico se “descama” de maneira similar as palhas de uma cebola.</p>
                             
                         </div><!-- END of TITLE & EXCERPT -->
                         
            			</div> <!-- END of BLOG ITEM-5 -->
                     
-					
-
 					   
-                    <!-- BLOG ITEM-7 -->
-               		<div class="blog-wrapper col-md-4">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/vix/ensaio-botequim-triangulo.jpg" alt="" class="hover-animation image-zoom-in">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-							
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h3>TRIÂNGULO DAS BERMUDAS</h3>
-                          	<p>O Triângulo é o espaço mais popular na noite capixaba. O lugar fica num dos bairros nobres da cidade e concentra os melhores bares, restaurantes e algumas casas noturnas. Sexta-feira e sábado à noite são os momentos em que a área fica mais cheia. Como são diversas as opções de bares, a vantagem desse lugar é poder escolher um ambiente que se encaixe melhor no seu perfil</p>
-                            
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-7 -->
-
 					<!-- BLOG ITEM-8 -->
                		<div class="blog-wrapper col-md-4">
                     
@@ -343,6 +357,35 @@ require_once "header.php";
                         
            			</div> <!-- END of BLOG ITEM-8 -->
 
+
+                    <!-- BLOG ITEM-7 -->
+               		<div class="blog-wrapper col-md-4">
+                    
+                    	<!--PHOTO-ITEM-->
+                      	<div class="photo-item animation fadeIn">
+								
+                        	<!--PHOTO-->
+                            <img src="images/vix/ensaio-botequim-triangulo.jpg" alt="" class="hover-animation image-zoom-in">
+                                            
+                            <!--PHOTO OVERLAY-->
+                           	<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                            </div><!--END of PHOTO OVERLAY-->
+							
+						</div><!--END of PHOTO-ITEM--> 
+                                        
+                        <!-- TITLE & EXCERPT -->
+                        <div class="title-excerpt animation fadeIn">
+                        
+                        	<div class="de-icon circle very-small-size custom-heart-icon">
+            					<i class="de-icon-heart"></i>
+            				</div>
+                        	<h3>TRIÂNGULO DAS BERMUDAS</h3>
+                          	<p>O Triângulo é o espaço mais popular na noite capixaba. O lugar fica num dos bairros nobres da cidade e concentra os melhores bares, restaurantes e algumas casas noturnas. Sexta-feira e sábado à noite são os momentos em que a área fica mais cheia. Como são diversas as opções de bares, a vantagem desse lugar é poder escolher um ambiente que se encaixe melhor no seu perfil</p>
+                            
+                        </div><!-- END of TITLE & EXCERPT -->
+                        
+           			</div> <!-- END of BLOG ITEM-7 -->
+					   
 					<!-- BLOG ITEM-9 -->
                		<div class="blog-wrapper col-md-4">
                     
@@ -369,9 +412,178 @@ require_once "header.php";
                             
                         </div><!-- END of TITLE & EXCERPT -->
                         
-           			</div> <!-- END of BLOG ITEM-9 -->
+           			</div> <!-- END of BLOG ITEM-9 -->		
 
 
+					</div> <!-- END ROW adicionado -->
+
+
+					<!-- PARAGRAPH LEAD TITLE -->
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6 text-center">
+					
+							<div class="section-title">
+								<h2>HOSPEDAGEM</h2>
+														
+								<div class="heart-divider">
+									<span class="grey-line"></span>
+									<i class="de-icon-heart pink-heart"></i>
+									<i class="de-icon-heart grey-heart"></i>
+									<span class="grey-line"></span>
+								</div>
+							</div>
+						
+						</div>
+					</div><!-- END of PARAGRAPH LEAD TITLE -->    
+
+					<!-- BLOG -->
+					<div class="row">
+
+						<!-- ITEM -->
+						<div class="blog-wrapper col-md-4">
+							<!--PHOTO-ITEM-->
+							<div class="photo-item animation fadeIn">
+								<!--PHOTO-->
+								<img src="images/wedding/bristol.vitoria.fachada.2.jpg" alt="" class="hover-animation image-zoom-in">
+								<!--PHOTO OVERLAY-->
+								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+								</div><!--END of PHOTO OVERLAY-->
+							</div><!--END of PHOTO-ITEM--> 
+							<!-- TITLE & EXCERPT -->
+							<div class="title-excerpt animation fadeIn">
+								<div class="de-icon circle very-small-size custom-heart-icon">
+									<i class="de-icon-heart"></i>
+								</div>
+								<h3>HOTEL BRISTOL ALAMEDA <span class='pink-dot'>(desconto)</span></h3>
+								<p>Av. Dante Michelini, 585 - Jardim da Penha</p>
+								<p>(27) 3204-6600</p>
+								<span><a href='http://www.bristolhotels.com.br/alameda-vitoria/hotel-overview.html'>http://www.bristolhotels.com.br/</a></span>
+							</div><!-- END of TITLE & EXCERPT -->
+						</div> <!-- END of ITEM -->
+
+						<!-- ITEM -->
+						<div class="blog-wrapper col-md-4">
+							<!--PHOTO-ITEM-->
+							<div class="photo-item animation fadeIn">
+								<!--PHOTO-->
+								<img src="images/wedding/hotel-ibis.jpg" alt="" class="hover-animation image-zoom-in">
+								<!--PHOTO OVERLAY-->
+								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+								</div><!--END of PHOTO OVERLAY-->
+							</div><!--END of PHOTO-ITEM--> 
+							<!-- TITLE & EXCERPT -->
+							<div class="title-excerpt animation fadeIn">
+								<div class="de-icon circle very-small-size custom-heart-icon">
+									<i class="de-icon-heart"></i>
+								</div>
+								<h3>HOTEL IBIS VITÓRIA</h3>
+								<p>Av. Dante Michelini, 791 - Praia De Camburi</p>
+								<p>(27) 3203-5450</p>
+								<span><a href='http://www.accorhotels.com/gb/hotel-7437-ibis-vitoria-praia-de-camburi/index.shtml'>http://www.accorhotels.com/</span>
+							</div><!-- END of TITLE & EXCERPT -->
+						</div> <!-- END of ITEM -->
+
+						<!-- ITEM -->
+						<div class="blog-wrapper col-md-4">
+							<!--PHOTO-ITEM-->
+							<div class="photo-item animation fadeIn">
+								<!--PHOTO-->
+								<img src="images/wedding/hotel-mercure.jpeg" alt="" class="hover-animation image-zoom-in">
+								<!--PHOTO OVERLAY-->
+								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+								</div><!--END of PHOTO OVERLAY-->
+							</div><!--END of PHOTO-ITEM--> 
+							<!-- TITLE & EXCERPT -->
+							<div class="title-excerpt animation fadeIn">
+								<div class="de-icon circle very-small-size custom-heart-icon">
+									<i class="de-icon-heart"></i>
+								</div>
+								<h3>MERCURE VITORIA HOTEL</h3>
+								<p>R. Aleixo Netto, 1385 - Praia do Canto</p>
+								<p>(27) 3183-6000</p>
+								<span><a href='http://www.accorhotels.com/gb/hotel-5472-mercure-vitoria-hotel/index.shtml'>http://www.accorhotels.com/</span>
+							</div><!-- END of TITLE & EXCERPT -->
+						</div> <!-- END of ITEM -->						
+
+						<!-- ITEM -->
+						<div class="blog-wrapper col-md-4">
+							<!--PHOTO-ITEM-->
+							<div class="photo-item animation fadeIn">
+								<!--PHOTO-->
+								<img src="images/wedding/hotel-Comfort-Suites-vitoria.jpg" alt="" class="hover-animation image-zoom-in">
+								<!--PHOTO OVERLAY-->
+								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+								</div><!--END of PHOTO OVERLAY-->
+							</div><!--END of PHOTO-ITEM--> 
+							<!-- TITLE & EXCERPT -->
+							<div class="title-excerpt animation fadeIn">
+								<div class="de-icon circle very-small-size custom-heart-icon">
+									<i class="de-icon-heart"></i>
+								</div>
+								<h3>COMFORT SUITES VITÓRIA</h3>
+								<p>Av. Saturnino de Brito, 1327 - Santa Helena</p>
+								<p>(27) 3183-2500</p>
+								<span><a href='http://www.atlanticahotels.com.br/hotel/vitoria/comfort-suites-vitoria'>http://www.atlanticahotels.com.br/</a></span>
+							</div><!-- END of TITLE & EXCERPT -->
+						</div> <!-- END of ITEM -->	
+
+					</div>
+
+					<!-- PARAGRAPH LEAD TITLE -->
+					<div class="row">
+						<div class="col-md-offset-3 col-md-6 text-center">
+					
+							<div class="section-title">
+								<h2>PASSAGENS AÉREAS</h2>
+														
+								<div class="heart-divider">
+									<span class="grey-line"></span>
+									<i class="de-icon-heart pink-heart"></i>
+									<i class="de-icon-heart grey-heart"></i>
+									<span class="grey-line"></span>
+								</div>
+
+								<p>Separamos algumas opções de voos para Vitória. Uma dica é comprar passagens nos finais de semana, há sempre promoções.</p>
+							</div>
+						
+						</div>
+					</div><!-- END of PARAGRAPH LEAD TITLE -->    
+
+                    <!-- FLOAT ICON -->
+                	<div class="row">
+                    	<div class="col-md-offset-1 col-md-5">
+                    		<div class="de-icon circle medium-size inline">
+                            	<i class="de-icon-flight"></i>
+                            </div>
+							<h3 class="inline text-center"><a href='https://goo.gl/flights/o2IE' target='_blank'>SÃO PAULO x VITÓRIA</a></h3>
+							<p>LATAM e GOL tem voos diários de Congonhas para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos.</a></p>
+                		</div>
+                    	<div class="col-md-5">
+                        	<div class="de-icon circle medium-size inline">
+                            	<i class="de-icon-flight"></i>
+                            </div>
+                      		<h3 class="inline text-center"><a href='https://www.google.com.br/flights/#search;f=MII;t=VIX;d=2017-09-01;r=2017-09-03;eo=c' target="_blank">MARÍLIA X VITÓRIA</a></h3>
+                           	<p>Os voos de Marília tem conexão em Campinas através da Azul. São duas opções: as 6h00 e as 11h09.</p>
+                		</div>
+					</div><!-- END of FLOAT ICON -->
+
+                    <!-- FLOAT ICON -->
+                	<div class="row">
+                    	<div class="col-md-offset-1 col-md-5">
+                    		<div class="de-icon circle medium-size inline">
+                            	<i class="de-icon-flight"></i>
+                            </div>
+							<h3 class="inline text-center"><a href='https://goo.gl/flights/o2IE' target='_blank'>BRASILIA x VITÓRIA</a></h3>
+							<p>LATAM e GOL tem voos diários de Brasília para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos</a>.</p>
+                		</div>
+                    	<div class="col-md-5">
+                        	<div class="de-icon circle medium-size inline">
+                            	<i class="de-icon-flight"></i>
+                            </div>
+                      		<h3 class="inline text-center"><a href='https://www.google.com.br/flights/#search;f=VCP;t=VIX;d=2017-09-01;r=2017-09-03;eo=c' target="_blank">CAMPINAS X VITÓRIA</a></h3>
+                           	<p>A Azul oferece voos diários de Campinas. Dica: há ônibus gratuito da Azul de São Paulo para Viracopos gratuito. <a href='https://www.voeazul.com.br/experiencia-azul/onibus-azul' target='_blank'>Conferir horários dos ônibus.</a></p>
+                		</div>
+					</div><!-- END of FLOAT ICON -->								
 
              	</div><!-- END of BLOG -->
                 

@@ -128,7 +128,7 @@ require_once 'header.php';
             								<i class="de-icon-quote-1"></i>
             							</div>
                                         
-                                        <h2 class="animation fadeInUp">CASA COMIGO, LIVIA?</h2>
+                                        <h2 class="animation fadeInUp">QUER CASAR COMIGO?</h2>
                                         
                                         <div class="heart-divider animation fadeInUp">
                                     		<span class="white-line"></span>
@@ -138,7 +138,7 @@ require_once 'header.php';
                                     	</div>    
                                         
                                         <p class="animation delay1 fadeInUp">
-                                    		Ele a convidou para jantar no chão de um pier... 
+                                    		Ele a convidou para jantar no pier de Veneza... 
                                     	</p>
                      
                      				</div>

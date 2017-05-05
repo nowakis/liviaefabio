@@ -1,8 +1,25 @@
 <?php
-
+require_once '/vagrant/config.php';
 require_once "header.php";
 ?>
 
+<style>
+
+/*
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+</style>
         <!-- MAIN SLIDER -->
     	<section id="main-slider" class="fixed-height">      	
             
@@ -29,6 +46,15 @@ require_once "header.php";
                             				<i class="de-icon-heart grey-heart"></i>
                             				<span class="grey-line"></span>
                         				</div>
+										
+										<p>
+											Para nos presentar, escolha qualquer um dos itens da lista de casamento.
+                                    	</p>
+                                        
+                                        <a href="#content" class="smooth-scroll">                                        	
+            								<i class="de-icon-down-open-big" style="font-size:40px; color:#FFF"></i>                                            
+        								</a>
+										
 
 									</div>
                         
@@ -54,27 +80,101 @@ require_once "header.php";
   			</div><!-- END of MAIN SLIDER IMAGES -->
             
 		</section><!-- ENF of MAIN SLIDER -->
-        
-        
-        
+
+		<?php
+		
+			error_reporting(E_ALL);
+			ini_set('display_errors', 1);
+
+			$categoria = trim((isset($_GET['category'])? $_GET['category'] : ''));
+
+			$parametro = '';
+
+			if ($categoria && is_numeric($categoria)) {
+				$parametro = "?category=$categoria";
+				$service_url = API_END_POINT.'wedding/gift/search'.$parametro;
+			} else {
+				$service_url = API_END_POINT.'wedding/gift/list';
+			}
+
+			
+			$curl = curl_init($service_url);
+			curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+			$curl_response = curl_exec($curl);
+			
+			if ($curl_response === false) {
+				$info = curl_getinfo($curl);
+				curl_close($curl);
+				die('error occured during curl exec. Additioanl info: ' . var_export($info));
+			} else {
+				curl_close($curl);
+				$decoded = json_decode($curl_response);
+			}
+
+			if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
+				$decoded = array();
+			}
+		?>
+
         <!--CONTENT SECTION-->
         <section id="content">
-        	           
+
             <!-- CONTAINER -->            
-           	<div class="container">
+           	<div class="container" id="products">
                 
+				<div class="row" style="margin-bottom:30px;">
+						<h3>CATEGORIAS</h3>
+						<p>
+							<a href="gift.php#products" class="de-button small <?php echo ($categoria=='')?"reverse":""; ?>">
+								TODAS
+							</a>
+							<a href="gift.php?category=1#products" class="de-button small <?php echo ($categoria==1)?"reverse":""; ?>">
+								AR E VENTILAÇÃO
+							</a>
+							<a href="gift.php?category=2#products" class="de-button small <?php echo ($categoria==2)?"reverse":""; ?>">
+								CAMA, MESA E BANHO
+							</a>
+							<a href="gift.php?category=3#products" class="de-button small <?php echo ($categoria==3)?"reverse":""; ?>">
+								CHURRASCO
+							</a>
+							<a href="gift.php?category=4#products" class="de-button small <?php echo ($categoria==4)?"reverse":""; ?>">
+								DECORAÇÃO
+							</a>
+							<a href="gift.php?category=5#products" class="de-button small <?php echo ($categoria==5)?"reverse":""; ?>">
+								ELETRODOMÉTICOS
+							</a>
+							<a href="gift.php?category=6#products" class="de-button small <?php echo ($categoria==6)?"reverse":""; ?>">
+								ELETRÔNICOS
+							</a>
+							<a href="gift.php?category=7#products" class="de-button small <?php echo ($categoria==7)?"reverse":""; ?>">
+								ELETROPORTÁTEIS
+							</a>
+							<a href="gift.php?category=8#products" class="de-button small <?php echo ($categoria==8)?"reverse":""; ?>">
+								UTILIDADES DOMÉSTICAS
+							</a>
+							<a href="gift.php?category=9#products" class="de-button small <?php echo ($categoria==9)?"reverse":""; ?>">
+								MÓVEIS
+							</a>
+							<a href="gift.php?category=99#products" class="de-button small <?php echo ($categoria==99)?"reverse":""; ?>">
+								LUA DE MEL
+							</a>
+						</p>                        		
+				</div>
+
                 <!-- BLOG -->
             	<div class="row">
                 
+					<?php foreach ($decoded as $item) { ?>
+
 
                     <!-- BLOG ITEM-6 -->
                		<div class="blog-wrapper col-md-3">
                     
                     	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
+                      	<div class="photo-item animation fadeIn photo-small">
 								
                         	<!--PHOTO-->
-                            <img src="images/produtos/SG-UN55KU6000GXZD_PRD_447_1.jpg" alt="" class="hover-animation">
+                            <img src="<?php echo $item->imagem ?>" alt="" class="hover-animation">
                                             
                             <!--PHOTO OVERLAY-->
                            	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
@@ -84,7 +184,7 @@ require_once "header.php";
 							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
 								<div class="alignment">
 									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
+										<a href="shop.php?product=<?php echo $item->id ?>" class="de-button outline small">COMPRAR</a>
 									</div>
 								</div>
 							</div><!--END of ICON LINK-->
@@ -97,507 +197,39 @@ require_once "header.php";
                         	<div class="de-icon circle very-small-size custom-heart-icon">
             					<i class="de-icon-heart"></i>
             				</div>
-                        	<h4><a href='#'>Smart TV 4K Samsung LED 55"</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 5.999,00</p>
-							<p class='strong no-margin price'>por: R$ 3.749,13 à vista</p>
+                        	<h4><a href='#'><?php echo $item->nome ?></a></h4>
+                          	<span class='small'><?php echo $item->descricao ?></span>
+							<!--
+							<p class='no-margin'>
+								<?php if ($item->desconto) { ?>
+									de: R$ <?php echo number_format($item->valor + $item->desconto, 2, ',', '.') ?>
+								<?php } ?>
+								&nbsp;
+							</p>
+							-->
+
+							<div>
+								<p class='strong no-margin price'>
+									<?php if ($item->desconto && 1==2) { ?>
+										por: 
+									<?php } ?>
+									R$ <?php echo number_format($item->valor, 2, ',', '.'); ?>
+
+									&nbsp;&nbsp;&nbsp;<span>
+										<a href="shop.php?product=<?php echo $item->id ?>" class="de-button small">
+											Comprar
+										</a>
+									</span>									
+								</p>
+							</div>
 							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
+							
                         </div><!-- END of TITLE & EXCERPT -->
                         
            			</div> <!-- END of BLOG ITEM-6 -->
 
 
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/JBLCINSB25PTO_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Soundbar JBL com 200 W</a></h4>
-                          	<p class='small'>Subwoofer Ativo Wireless - Cinema SB250 - JBLCINSB25PTO</p>
-                            
-							<p class='no-margin'>de: R$ 2.399,00</p>
-							<p class='strong no-margin price'>por: R$ 1.298,77 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-				
-				
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/ARB100_CHOP1_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn ">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Chopeira Beertender Krups Heineken</a></h4>
-                          	<p class='small'>Capacidade de 5 Litros Preto</p>
-                            
-							<p class='no-margin'>de: R$ 1.199,99</p>
-							<p class='strong no-margin price'>por: R$ 861,02 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/SGWF106U4SAWQ_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Lavadora de Roupas Samsung 10Kg</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 2.545,00</p>
-							<p class='strong no-margin price'>por: R$ 1.947,06 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/SG-UN55KU6000GXZD_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Smart TV 4K Samsung LED 55"</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 5.999,00</p>
-							<p class='strong no-margin price'>por: R$ 3.749,13 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/JBLCINSB25PTO_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Soundbar JBL com 200 W</a></h4>
-                          	<p class='small'>Subwoofer Ativo Wireless - Cinema SB250 - JBLCINSB25PTO</p>
-                            
-							<p class='no-margin'>de: R$ 2.399,00</p>
-							<p class='strong no-margin price'>por: R$ 1.298,77 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-				
-				
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/ARB100_CHOP1_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn ">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Chopeira Beertender Krups Heineken</a></h4>
-                          	<p class='small'>Capacidade de 5 Litros Preto</p>
-                            
-							<p class='no-margin'>de: R$ 1.199,99</p>
-							<p class='strong no-margin price'>por: R$ 861,02 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/SGWF106U4SAWQ_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Lavadora de Roupas Samsung 10Kg</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 2.545,00</p>
-							<p class='strong no-margin price'>por: R$ 1.947,06 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-
-					   
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/SG-UN55KU6000GXZD_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Smart TV 4K Samsung LED 55"</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 5.999,00</p>
-							<p class='strong no-margin price'>por: R$ 3.749,13 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/JBLCINSB25PTO_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Soundbar JBL com 200 W</a></h4>
-                          	<p class='small'>Subwoofer Ativo Wireless - Cinema SB250 - JBLCINSB25PTO</p>
-                            
-							<p class='no-margin'>de: R$ 2.399,00</p>
-							<p class='strong no-margin price'>por: R$ 1.298,77 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-				
-				
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/ARB100_CHOP1_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn ">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Chopeira Beertender Krups Heineken</a></h4>
-                          	<p class='small'>Capacidade de 5 Litros Preto</p>
-                            
-							<p class='no-margin'>de: R$ 1.199,99</p>
-							<p class='strong no-margin price'>por: R$ 861,02 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
-
-                    <!-- BLOG ITEM-6 -->
-               		<div class="blog-wrapper col-md-3">
-                    
-                    	<!--PHOTO-ITEM-->
-                      	<div class="photo-item animation fadeIn">
-								
-                        	<!--PHOTO-->
-                            <img src="images/produtos/SGWF106U4SAWQ_PRD_447_1.jpg" alt="" class="hover-animation">
-                                            
-                            <!--PHOTO OVERLAY-->
-                           	<div class="layer wh100 hidden-black-overlay hover-animation half-fade-in">
-                            </div><!--END of PHOTO OVERLAY-->
-								
-							<!--ICON LINK-->
-							<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
-								<div class="alignment">
-									<div class="v-align center-middle">
-										<a href="#" class="de-button outline small">COMPRAR</a>
-									</div>
-								</div>
-							</div><!--END of ICON LINK-->
-
-						</div><!--END of PHOTO-ITEM--> 
-                                        
-                        <!-- TITLE & EXCERPT -->
-                        <div class="title-excerpt animation fadeIn">
-                        
-                        	<div class="de-icon circle very-small-size custom-heart-icon">
-            					<i class="de-icon-heart"></i>
-            				</div>
-                        	<h4><a href='#'>Lavadora de Roupas Samsung 10Kg</a></h4>
-                          	<p class='small'>Com Processador Quad Core, 120 Hz Motion Rate e Wi-Fi </p>
-                            
-							<p class='no-margin'>de: R$ 2.545,00</p>
-							<p class='strong no-margin price'>por: R$ 1.947,06 à vista</p>
-							
-							<a href="#" class="de-button small">
-								Comprar
-							</a>
-                        </div><!-- END of TITLE & EXCERPT -->
-                        
-           			</div> <!-- END of BLOG ITEM-6 -->
+					<?php } ?>
 
                     
 

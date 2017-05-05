@@ -1,7 +1,7 @@
 <?php
 require_once 'header.php';
 ?>
-      
+
        	<!-- MAIN SLIDER -->
     	<section id="main-slider" class="fixed-height"  >      	
             
@@ -19,7 +19,7 @@ require_once 'header.php';
                         		<div class="col-md-offset-2 col-md-8">                                     
                                      
                                     <div class="page-title">
-                                		<h1>RSVP</h1>
+                                		<h1>CONFIRME SUA PRESENÇA</h1>
                                		
                                         <div class="heart-divider">
                                     		<span class="white-line"></span>
@@ -28,7 +28,8 @@ require_once 'header.php';
                                         	<span class="white-line"></span>
                                    		</div>
                                     	
-                                        <p>Confirme sua presença</p>
+                                        <p>Estamos muitos felizes e contamos com a sua presença no nosso grande dia.</p>
+										<p>Confirme até o dia 07 de agosto de 2017</p>
                                     </div>
                                    
 								</div>
@@ -66,7 +67,7 @@ require_once 'header.php';
         
         	<!-- CONTAINER -->
 			<div class="container">
-                <form method="post" action="rsvp.php" id="rsvpform">
+                <form method="post" action="rsvp-server.php" id="rsvpform">
                 <!--TEXT SECTION-->
                 <div class="row">
                 	<div id="message" class="col-md-offset-2 col-md-8 message">
@@ -77,36 +78,36 @@ require_once 'header.php';
                 	<div class="col-md-offset-2 col-md-8">
                     	
                         <div class="form-group">
-    						<label for="inputname">*NOME COMPLETO</label>
+    						<label for="name">*NOME COMPLETO</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-    							<input type="name" id="inputname"  class="form-control ajax-input" placeholder="" data-required="Nome obrigatório" data-output-label="Nome">
+    							<input type="text" id="name" class="form-control ajax-input" placeholder="" data-required="Nome obrigatório" data-output-label="Nome">
                           	</div>
  						</div>
 
                         <div class="form-group">
                             <label>*VOCÊ IRÁ PARTICIPAR?</label>
-                           	<div id="input-radio-inline-custom-icon" class="ajax-input ajax-radio" data-required="Preencher este campo." data-output-label="input-radio-inline-custom - 2">
+                           	<div id="attended" class="ajax-input ajax-radio" data-required="Você irá participar?" data-output-label="input-radio-inline-custom - 2">
                             	<div data-toggle="buttons">
   									<label class="btn btn-primary custom-option-icon">
-    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon1" value="yes"> Sim
+    									<input type="radio" name="participar" id="vai" value="1"> Sim
   									</label>
                                		<label class="btn btn-primary custom-option-icon">
-    									<input type="radio" name="optionsRadiosInlineCustomIcon" id="inlineRadioCustomIcon2" value="not"> Não poderei participar
+    									<input type="radio" name="participar" id="nao"  value="0"> Não poderei participar
   									</label>
                                 </div>
 							</div> 
                        	</div>
 
                         <div class="form-group">
-    						<label for="inputname">*TELEFONE</label>
+    						<label for="phone">*TELEFONE</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-    							<input type="phone" id="phone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
+    							<input type="text" id="phone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
                           	</div>
  						</div>                                                
                         <div class="form-group">
-    						<label for="inputemail">*EMAIL</label>
+    						<label for="email">*EMAIL</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-mail"></i></div>
     							<input type="email" id="email"  class="form-control ajax-input" placeholder="" data-required="Email obrigatório" data-output-label="Output Email">
@@ -114,12 +115,12 @@ require_once 'header.php';
  						</div>                    
 
 		                <div class="form-group">
-    						<label for="inputmessage">NOME DOS ACOMPANHANTES</label>
+    						<label for="guest">NOME DOS ACOMPANHANTES</label>
     						<textarea id="guest" class="form-control ajax-input" rows="4" data-output-label="Output Message"></textarea>
  						</div> 
 						               
                         <div class="form-group">
-    						<label for="inputmessage">DEIXE SUA MENSAGEM</label>
+    						<label for="message">DEIXE SUA MENSAGEM</label>
     						<textarea id="message" class="form-control ajax-input" rows="4" data-output-label="Output Message"></textarea>
  						</div>       
                         

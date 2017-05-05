@@ -80,7 +80,10 @@
         <script src="js/magnific-popup/jquery.magnific-popup.js"></script>
         <!-- Owl Carousel -->
         <script src="js/owlcarousel/owl.carousel.js"></script>
-        
+         <!-- RSVP -->
+        <script src="js/rsvp/rsvp.js"></script>
+         <!-- SHOP -->
+        <script src="js/rsvp/shop.js"></script>
         <!-- Custom Core Script -->
         <script type="text/javascript" src="js/script.js"></script>        
         
