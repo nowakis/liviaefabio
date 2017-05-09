@@ -48,7 +48,7 @@ require_once "header.php";
                         				</div>
 										
 										<p>
-											Para nos presentar, escolha qualquer um dos itens da lista de casamento.
+											Para nos presentear, escolha qualquer item da Lista de Casamento, mesmo sendo passeios ou outros itens, pois receberemos em dinheiro. 
                                     	</p>
                                         
                                         <a href="#content" class="smooth-scroll">                                        	
@@ -99,6 +99,7 @@ require_once "header.php";
 
 			
 			$curl = curl_init($service_url);
+			//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 			$curl_response = curl_exec($curl);
 			

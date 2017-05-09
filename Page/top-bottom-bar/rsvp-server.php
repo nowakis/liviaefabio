@@ -39,6 +39,7 @@ require_once '/vagrant/config.php';
 		$curl = curl_init($service_url);
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
+		//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
 
 		$curl_response = curl_exec($curl);

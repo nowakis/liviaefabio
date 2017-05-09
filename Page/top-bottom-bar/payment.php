@@ -21,6 +21,7 @@ function randHash($len=32)
 	$service_url = API_END_POINT.'wedding/gift/'.$product;
 	$curl = curl_init($service_url);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 	$curl_response = curl_exec($curl);
 	
 	if ($curl_response === false) {
@@ -60,6 +61,7 @@ function randHash($len=32)
 	$curl = curl_init($service_url);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
+	//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 	curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
 
 	$curl_response = curl_exec($curl);
@@ -103,7 +105,7 @@ function randHash($len=32)
   <input name="tax"           type="hidden"  value="0"  >
   <input name="taxReturnBase" type="hidden"  value="0" >
   <input name="currency"      type="hidden"  value="BRL" >
-  <input name="test"      type="hidden"  value="1" >
+  <!--<input name="test"      type="hidden"  value="1" >-->
   <input name="signature"     type="hidden"  value="<?php echo $order->signature?>"  >
   <input name="buyerFullName" type="hidden"  value="<?php echo $order->buyerName?>" >
   <input name="buyerEmail"    type="hidden"  value="<?php echo $order->buyerEmail?>" >

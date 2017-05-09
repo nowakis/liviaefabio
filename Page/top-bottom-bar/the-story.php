@@ -37,6 +37,9 @@ require_once 'header.php';
                                     		Tudo começou em uma viagem de cruzeiro....
                                     	</p>
                                         
+										<a href="#content" class="smooth-scroll">                                        	
+            								<i class="de-icon-down-open-big" style="font-size:40px; color:#FFF"></i>                                            
+        								</a>										
                                     </div>                                    
 								</div>
                                 
@@ -85,28 +88,26 @@ require_once 'header.php';
                         
   					</div>
                 </div>
-                    
                 
                 <div class="row">
-                	<div class="col-md-offset-1 col-md-5 animation fadeIn">
+                   	<div class="col-md-offset-2 col-md-8  animation fadeIn">
                     	<p>
-                        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex arcu consectetur enim, eu malesuada magna turpis sit amet mauris. Nullam nec leo at lorem interdum commodo. Etiam mollis massa in mauris lacinia porta. 
+                        	Em 2015, atravessamos o aceano e o destino nos uniu. A vida é cheia de grandes surpresas e encontros, não é? E o nosso, como posso dizer... Foi mágico! 
 						</p>
                         <p>
-                        	Pellentesque tristique, ante nec dictum mollis, felis ligula ullamcorper velit, ac auctor est ipsum vehicula ex. Donec eu blandit est, id gravida justo. Maecenas laoreet laoreet congue. Cras sit amet vestibulum ligula. Ut nec erat tristique, iaculis purus ac, pellentesque mi. Donec ac cursus est. Nunc id varius enim, ut tincidunt mi. Integer non est eros. Aliquam ex 
-						</p>                            
+                        	Estávamos em uma viagem de férias num cruzeiro em Miami, lugar onde a partir do primeiro olhar na mesma mesa de jantar o encanto começou. Foram dias de convívio, suficientes para termos certeza que nos encontraríamos de novo. 
+						</p>
+						<p>
+							E foi assim que, mesmo morando em Estados diferentes, com o amor tudo parecia fácil de ser contornado e não tivemos mais dívidas, oficializamos o namoro. 
+						</p>
+						<p>
+							Em 2016 planejamos nossas férias juntos, foi uma viagem muito sonhada e o momento perfeito pra surgir o grande pedido..
+						</p>                        
                      </div>
-                     <div class="col-md-5 animation fadeIn">
-                    	<p>
-                        	 Morbi a condimentum quam. Nullam quis quam at ex eleifend feugiat. Vivamus lacinia quam quam, ac viverra turpis pellentesque in. Mauris sollicitudin sapien risus, non sagittis velit dictum eget. Suspendisse velit lacus, pulvinar non ante ut, venenatis vehicula dolor. In hac habitasse platea dictumst. Nunc blandit egestas magna eu commodo. 
-						</p>
-                        <p>
-                        	Proin ut eros ante. Mauris vitae tempus sem, ac venenatis arcu. Etiam eget blandit arcu, quis consequat nunc. Nunc pulvinar vehicula pellentesque. Sed auctor scelerisque mi. Curabitur mattis consequat lacus non iaculis. Integer justo nibh, ullamcorper et dolor ut, porta dapibus ante. Sed quis ex at felis ornare pharetra vitae id dolor. Donec finibus sagittis
-						</p>                            
-                    </div>
                	</div>
 
             </div> <!-- END of CONTAINER-1 -->
+
 
             <!-- PARALLAX  -->
             <div class="divider-wrapper">
@@ -153,6 +154,7 @@ require_once 'header.php';
             </div><!-- END of PARALLAX -->
             
          
+		 
             <!-- CONTAINER-2 -->
             <div class="container">
             
@@ -171,28 +173,53 @@ require_once 'header.php';
                         
                   	</div>
                	</div>
-                        
-                <div class="row">
-                	<div class="col-md-offset-1 col-md-5 animation fadeIn">
-                    	<p>
-                        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce urna urna, imperdiet et purus ut, ultricies sollicitudin arcu. Cras placerat, arcu non faucibus suscipit, ex arcu consectetur enim, eu malesuada magna turpis sit amet mauris. Nullam nec leo at lorem interdum commodo. Etiam mollis massa in mauris lacinia porta. 
-						</p>                        
-                    </div>
-                    <div class="col-md-5 animation fadeIn">
-                    	<p>
-                        	Morbi a condimentum quam. Nullam quis quam at ex eleifend feugiat. Vivamus lacinia quam quam, ac viverra turpis pellentesque in. Mauris sollicitudin sapien risus, non sagittis velit dictum eget. Suspendisse velit lacus, pulvinar non ante ut, venenatis vehicula dolor. In hac habitasse platea dictumst. Nunc blandit egestas magna eu commodo. 
-						</p>
-                    </div>
-              	</div>
+				   
                 
-                <div class="row">                        
-                	<div class="col-md-offset-1 col-md-10" style="margin-top:50px">
-                    	<img src="images/vintage/IMG_7590-apos.jpg" alt="" class="fullwidth animation fadeIn">
-                    </div>
-                </div>
                 
  			</div><!-- END of CONTAINER-2 -->            
             
+
+            <!-- PARALLAX  -->
+            <div class="divider-wrapper">
+            	<div class="image-divider fixed-height" style="background-image:url(images/vintage/IMG_7590-apos.jpg); height:560px" data-stellar-background-ratio="0.5" >
+                	<div class="divider-overlay" style="opacity:0.2"></div>
+                
+                    <!-- Use Center Middle Alignment to align middle the content for fixed-height parallax -->
+                    <div class="alignment"> 
+                    	<div class="v-align center-middle">                  	
+                    	
+                        	<!-- CONTAINER -->	
+                    		<div class="container">        
+                                     	 
+                                <!--TITLE & TEXT-->           
+                    			<div class="row">
+                        			<div class="col-md-offset-2 col-md-8">                                        
+                        
+                                        
+                                        <div class="heart-divider animation fadeInUp">
+                                    		<span class="white-line"></span>
+                                        	<i class="de-icon-heart pink-heart"></i>
+                                        	<i class="de-icon-heart white-heart"></i>
+                                        	<span class="white-line"></span>
+                                    	</div>    
+                                        
+                                        <p class="animation delay1 fadeInUp">
+                                    		A felicidade sempre esteve estampada em nossos rostos desde que nos conhecemos. Marcar o casamento e participar de todos os preparativos foi uma realização em nossas vidas. Por isso gostaríamos de dividir este momento com todos vocês, familiares e amigos, que vibram juntos com a gente! 
+                                    	</p>
+
+                     
+                     				</div>
+                     			</div><!-- END of TITLE & TEXT--> 
+                                
+                     		</div> <!-- END of CONTAINER -->
+                     
+                     	</div>
+                   	</div><!-- END of Center Middle Alignment -->
+                    
+                </div>
+            </div><!-- END of PARALLAX -->
+
+
         </section>
         
 <?php

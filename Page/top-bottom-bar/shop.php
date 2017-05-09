@@ -18,6 +18,7 @@ require_once 'header.php';
 	$service_url = API_END_POINT.'wedding/gift/'.$product;
 	$curl = curl_init($service_url);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+	//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 	$curl_response = curl_exec($curl);
 	
 	if ($curl_response === false) {
@@ -42,7 +43,7 @@ require_once 'header.php';
 			<div class="col-md-offset-3 col-md-6 text-center">
 		
 				<div class="page-title">
-					<h1>CARRINHO DE COMPRA</h1>
+					<h1>CONFIRMAÇÃO DO PRESENTE</h1>
 											
 					<div class="heart-divider">
 						<span class="grey-line"></span>

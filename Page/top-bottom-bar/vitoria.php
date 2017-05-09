@@ -33,7 +33,7 @@ require_once "header.php";
                         					No dia 8 de setembro de 1551 era fundada a cidade de Vitória, capital do estado do Espírito Santo, e uma das três ilhas-capitais do Brasil. Com uma população de 330 mil habitantes, além da ilha principal, Vitória, fazem parte do município outras 34 ilhas e uma porção continental. 
                        	 				</p>
 											<p>
-											A cidade possui dois grandes portos, o Porto de Vitória e o Porto de Tubarão, e são considerados os melhores do país. A capital capixaba LATAMbém conta com diversas praias, que não são muito extensas por causa do LATAManho da ilha. Entre as mais conhecidas está a Praia de Camburi.
+											A cidade possui dois grandes portos, o Porto de Vitória e o Porto de Tubarão, e são considerados os melhores do país. A capital capixaba também conta com diversas praias, que não são muito extensas por causa do tamanho da ilha. Entre as mais conhecidas está a Praia de Camburi.
 											</p>
                                         
 										<a href="#content" class="smooth-scroll">                                        	
@@ -322,7 +322,7 @@ require_once "header.php";
             					<i class="de-icon-heart"></i>
             				</div>
                         	<h3>PARQUE PEDRA DA CEBOLA</h3>
-                          	<p>Uma das áreas verdes mais belas da cidade de Vitória. A origem do nome do parque deriva de uma grande pedra esculpida pela natureza que repousa sobre outra rocha, e que devido a seu comporLATAMento geológico se “descama” de maneira similar as palhas de uma cebola.</p>
+                          	<p>Uma das áreas verdes mais belas da cidade de Vitória. A origem do nome do parque deriva de uma grande pedra esculpida pela natureza que repousa sobre outra rocha, e que devido a seu comportamento geológico se “descama” de maneira similar as palhas de uma cebola.</p>
                             
                         </div><!-- END of TITLE & EXCERPT -->
                         
