@@ -38,27 +38,27 @@ require_once 'header.php';
 <!--CONTENT SECTION-->
 <section id="content">
 
-		<!-- HEADING TITLE -->
-		<div class="row">
-			<div class="col-md-offset-3 col-md-6 text-center">
-		
-				<div class="page-title">
-					<h1>CONFIRMAÇÃO DO PRESENTE</h1>
-											
-					<div class="heart-divider">
-						<span class="grey-line"></span>
-						<i class="de-icon-heart pink-heart"></i>
-						<i class="de-icon-heart grey-heart"></i>
-						<span class="grey-line"></span>
-					</div>
-				</div>
-			
-			</div>
-		</div><!-- END of HEADING TITLE -->
-		
 		<!-- CONTAINER -->
 		<div class="container">
 
+			<!-- HEADING TITLE -->
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 text-center">
+			
+					<div class="page-title">
+						<h1>CONFIRMAÇÃO DO PRESENTE</h1>
+												
+						<div class="heart-divider">
+							<span class="grey-line"></span>
+							<i class="de-icon-heart pink-heart"></i>
+							<i class="de-icon-heart grey-heart"></i>
+							<span class="grey-line"></span>
+						</div>
+					</div>
+				
+				</div>
+			</div><!-- END of HEADING TITLE -->
+			
 			<form action="payment.php" method="post" id="shopform">
 				<input type="hidden" name="product" value="<?php echo $product->id ?>">
 

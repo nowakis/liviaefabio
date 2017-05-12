@@ -48,7 +48,7 @@ require_once "header.php";
                         				</div>
 										
 										<p>
-											Para nos presentear, escolha qualquer item da Lista de Casamento, mesmo sendo passeios ou outros itens, pois receberemos em dinheiro. 
+											Se você quiser nos presentear, escolha um dos itens da Lista de Casamento. Mesmo sendo passeios ou outros itens, vamos receber em dinheiro. 
                                     	</p>
                                         
                                         <a href="#content" class="smooth-scroll">                                        	
@@ -90,14 +90,14 @@ require_once "header.php";
 
 			$parametro = '';
 
-			if ($categoria && is_numeric($categoria)) {
-				$parametro = "?category=$categoria";
-				$service_url = API_END_POINT.'wedding/gift/search'.$parametro;
-			} else {
-				$service_url = API_END_POINT.'wedding/gift/list';
+			if (!$categoria && !is_numeric($categoria)) {
+				$categoria = 2;
 			}
 
-			
+			$parametro = "?category=$categoria";
+
+			$service_url = API_END_POINT.'wedding/gift/search'.$parametro;
+
 			$curl = curl_init($service_url);
 			//curl_setopt($curl, CURLOPT_USERPWD, API_USER . ":" . API_PASSWORD);
 			curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
@@ -126,12 +126,6 @@ require_once "header.php";
 				<div class="row" style="margin-bottom:30px;">
 						<h3>CATEGORIAS</h3>
 						<p>
-							<a href="gift.php#products" class="de-button small <?php echo ($categoria=='')?"reverse":""; ?>">
-								TODAS
-							</a>
-							<a href="gift.php?category=1#products" class="de-button small <?php echo ($categoria==1)?"reverse":""; ?>">
-								AR E VENTILAÇÃO
-							</a>
 							<a href="gift.php?category=2#products" class="de-button small <?php echo ($categoria==2)?"reverse":""; ?>">
 								CAMA, MESA E BANHO
 							</a>
@@ -199,7 +193,7 @@ require_once "header.php";
             					<i class="de-icon-heart"></i>
             				</div>
                         	<h4><a href='#'><?php echo $item->nome ?></a></h4>
-                          	<span class='small'><?php echo $item->descricao ?></span>
+                          	<span class='small'><?php echo str_replace('#','&nbsp; ',str_pad($item->descricao,50,'#')) ?></span>
 							<!--
 							<p class='no-margin'>
 								<?php if ($item->desconto) { ?>

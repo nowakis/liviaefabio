@@ -108,27 +108,28 @@ merchant_address=Rua+Avanhdandava+40+AP+1010+Bela+Vista
 
 <!--CONTENT SECTION-->
 <section id="content">
-
-		<!-- HEADING TITLE -->
-		<div class="row">
-			<div class="text-center">
-		
-				<div class="page-title">
-					<h1>OBRIGADO PELO CARINHO</h1>
-											
-					<div class="heart-divider">
-						<span class="grey-line"></span>
-						<i class="de-icon-heart pink-heart"></i>
-						<i class="de-icon-heart grey-heart"></i>
-						<span class="grey-line"></span>
-					</div>
-				</div>
-			
-			</div>
-		</div><!-- END of HEADING TITLE -->
 		
 		<!-- CONTAINER -->
 		<div class="container">
+
+			<!-- HEADING TITLE -->
+			<div class="row">
+				<div class="text-center">
+			
+					<div class="page-title" style='margin-top:60px'>
+						<h1>OBRIGADO PELO CARINHO</h1>
+												
+						<div class="heart-divider">
+							<span class="grey-line"></span>
+							<i class="de-icon-heart pink-heart"></i>
+							<i class="de-icon-heart grey-heart"></i>
+							<span class="grey-line"></span>
+						</div>
+					</div>
+				
+				</div>
+			</div><!-- END of HEADING TITLE -->
+
 
 			<div class="row">
 				<div class="col-md-offset-3 col-md-6">

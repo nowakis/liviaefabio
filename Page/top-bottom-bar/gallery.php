@@ -103,6 +103,66 @@ require_once 'header.php';
                                     
        			</div><!-- END of GALLERY ITEM-3 -->
 
+ 				<!-- GALLERY ITEM-3.1 -->
+             	<div class="masonry-col w25 animation fadeIn">
+                    				
+                 	<!--PHOTO-ITEM-->
+                    <div class="photo-item animation fadeIn">
+								
+                     	<!--PHOTO-->
+                    	<img src="images/normal/album/LIV_FAB_7849.jpg" alt="" class="hover-animation image-zoom-in">
+                                            
+                     	<!--PHOTO OVERLAY-->
+                        <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                  		</div><!--END of PHOTO OVERLAY-->
+                                				                                    
+                     	<!--ICON LINK-->
+                     	<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                       		<div class="alignment">
+                        		<div class="v-align center-middle">    
+                           			<a href="images/normal/LIV_FAB_7849.jpg" class="magnific-zoom-gallery" title="Gallery-1">
+        								<div class="de-icon circle light medium-size inline">
+            								<i class="de-icon-zoom-in"></i>
+            							</div>
+        							</a>                                                
+                          		</div>
+                     		</div>
+                		</div><!--END of ICON LINK-->
+							
+					</div><!--END of PHOTO-ITEM-->
+                                    
+       			</div><!-- END of GALLERY ITEM-3.1 -->
+
+               	<!-- GALLERY ITEM-3.2 -->
+             	<div class="masonry-col w25 animation fadeIn">
+                    				
+                 	<!--PHOTO-ITEM-->
+                    <div class="photo-item animation fadeIn">
+								
+                     	<!--PHOTO-->
+                    	<img src="images/normal/album/LIV_FAB_6074.jpg" alt="" class="hover-animation image-zoom-in">
+                                            
+                     	<!--PHOTO OVERLAY-->
+                        <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                  		</div><!--END of PHOTO OVERLAY-->
+                                				                                    
+                     	<!--ICON LINK-->
+                     	<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                       		<div class="alignment">
+                        		<div class="v-align center-middle">    
+                           			<a href="images/normal/LIV_FAB_6074.jpg" class="magnific-zoom-gallery" title="Gallery-1">
+        								<div class="de-icon circle light medium-size inline">
+            								<i class="de-icon-zoom-in"></i>
+            							</div>
+        							</a>                                                
+                          		</div>
+                     		</div>
+                		</div><!--END of ICON LINK-->
+							
+					</div><!--END of PHOTO-ITEM-->
+                                    
+       			</div><!-- END of GALLERY ITEM-3.2 -->
+
                	<!-- GALLERY ITEM-4 -->
              	<div class="masonry-col w25 animation fadeIn">
                     				
@@ -133,6 +193,35 @@ require_once 'header.php';
                                     
        			</div><!-- END of GALLERY ITEM-4 -->
 
+               	<!-- GALLERY ITEM-4 -->
+             	<div class="masonry-col w25 animation fadeIn">
+                    				
+                 	<!--PHOTO-ITEM-->
+                    <div class="photo-item animation fadeIn">
+								
+                     	<!--PHOTO-->
+                    	<img src="images/normal/album/IMG_7849.JPG" alt="" class="hover-animation image-zoom-in">
+                                            
+                     	<!--PHOTO OVERLAY-->
+                        <div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+                  		</div><!--END of PHOTO OVERLAY-->
+                                				                                    
+                     	<!--ICON LINK-->
+                     	<div class="layer wh100 hidden-link hover-animation delay1 fade-in">
+                       		<div class="alignment">
+                        		<div class="v-align center-middle">    
+                           			<a href="images/normal/IMG_7849.JPG" class="magnific-zoom-gallery" title="Gallery-1">
+        								<div class="de-icon circle light medium-size inline">
+            								<i class="de-icon-zoom-in"></i>
+            							</div>
+        							</a>                                                
+                          		</div>
+                     		</div>
+                		</div><!--END of ICON LINK-->
+							
+					</div><!--END of PHOTO-ITEM-->
+                                    
+       			</div><!-- END of GALLERY ITEM-4 -->
 
                	<!-- GALLERY ITEM-5 -->
              	<div class="masonry-col w25 animation fadeIn">

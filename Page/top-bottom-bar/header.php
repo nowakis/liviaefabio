@@ -140,12 +140,12 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
 							<a href="location.php">QUANDO E ONDE</a>
                         </li>
 
-                    	<li>
-                        	<a href="rsvp.php">CONFIRME SUA PRESENÇA</a>
-                        </li>
-
                         <li>
                         	<a href="gift.php">PRESENTES</a>
+                        </li>
+
+                    	<li>
+                        	<a href="rsvp.php">CONFIRME SUA PRESENÇA</a>
                         </li>
                 	</ul>
                     

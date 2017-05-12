@@ -137,10 +137,7 @@ require_once 'header.php';
                                         	<i class="de-icon-heart white-heart"></i>
                                         	<span class="white-line"></span>
                                     	</div>    
-                                        
-                                        <p class="animation delay1 fadeInUp">
-                                    		Ele a convidou para jantar no pier de Veneza... 
-                                    	</p>
+                          
                      
                      				</div>
                      			</div><!-- END of TITLE & TEXT--> 
