@@ -110,7 +110,7 @@ require_once 'header.php';
             		</div>
         		</a>
                 
-                <audio id="audioID" src="audio/The-Wedding-Song-Matthew-Mole.mp3"  loop> <!-- autoplay -->
+                <audio id="audioID" src="audio/The-Wedding-Song-Matthew-Mole.mp3" autoplay loop> <!-- autoplay -->
 					Your browser does not support the audio element.
 				</audio>
             </div>
