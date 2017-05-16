@@ -129,12 +129,6 @@ require_once "header.php";
 							<a href="gift.php?category=2#products" class="de-button small <?php echo ($categoria==2)?"reverse":""; ?>">
 								CAMA, MESA E BANHO
 							</a>
-							<a href="gift.php?category=3#products" class="de-button small <?php echo ($categoria==3)?"reverse":""; ?>">
-								CHURRASCO
-							</a>
-							<a href="gift.php?category=4#products" class="de-button small <?php echo ($categoria==4)?"reverse":""; ?>">
-								DECORAÇÃO
-							</a>
 							<a href="gift.php?category=5#products" class="de-button small <?php echo ($categoria==5)?"reverse":""; ?>">
 								ELETRODOMÉTICOS
 							</a>

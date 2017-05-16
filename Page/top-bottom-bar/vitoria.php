@@ -444,6 +444,32 @@ require_once "header.php";
 							<!--PHOTO-ITEM-->
 							<div class="photo-item animation fadeIn">
 								<!--PHOTO-->
+								<img src="images/wedding/hotel-Comfort-Suites-vitoria.jpg" alt="" class="hover-animation image-zoom-in">
+								<!--PHOTO OVERLAY-->
+								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
+								</div><!--END of PHOTO OVERLAY-->
+							</div><!--END of PHOTO-ITEM--> 
+							<!-- TITLE & EXCERPT -->
+							<div class="title-excerpt animation fadeIn">
+								<div class="de-icon circle very-small-size custom-heart-icon">
+									<i class="de-icon-heart"></i>
+								</div>
+								<h3>COMFORT SUITES VITÓRIA <span class='pink-dot subtitle'>Indicado dos Noivos</span></h3>
+								<p>Hotel na melhor localização em Vitória</p>
+								<p>Av. Saturnino de Brito, 1327 - Santa Helena<br>
+								<span>(27) 3183-2500</span><br>
+								<a href='http://www.atlanticahotels.com.br/hotel/vitoria/comfort-suites-vitoria' target='_blank'>www.atlanticahotels.com.br</a></p>
+								<a href='https://myreservations.omnibees.com/default.aspx?q=4060&NRooms=1&ad=1&CheckIn=05052017&CheckOut=07052017&lang=pt-BR#/&diff=false&CheckIn=01092017&CheckOut=03092017&Code=&group_code=&loyality_card=&NRooms=1&ad=1&ch=0&ag=-' target='_blank' class="de-button small reverse">
+                        			VERIFICAR DISPONIBILIDADE
+                   				</a>
+							</div><!-- END of TITLE & EXCERPT -->
+						</div> <!-- END of ITEM -->	
+
+						<!-- ITEM -->
+						<div class="blog-wrapper col-md-4">
+							<!--PHOTO-ITEM-->
+							<div class="photo-item animation fadeIn">
+								<!--PHOTO-->
 								<img src="images/wedding/bristol.vitoria.fachada.2.jpg" alt="" class="hover-animation image-zoom-in">
 								<!--PHOTO OVERLAY-->
 								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
@@ -454,13 +480,18 @@ require_once "header.php";
 								<div class="de-icon circle very-small-size custom-heart-icon">
 									<i class="de-icon-heart"></i>
 								</div>
-								<h3>HOTEL BRISTOL ALAMEDA <span class='pink-dot'>(desconto)</span></h3>
-								<p>Av. Dante Michelini, 585 - Jardim da Penha</p>
-								<p>(27) 3204-6600</p>
-								<span><a href='http://www.bristolhotels.com.br/alameda-vitoria/hotel-overview.html'>http://www.bristolhotels.com.br/</a></span>
+								<h3>HOTEL BRISTOL ALAMEDA</h3>
+								<p>Na orla da praia de Camburi</p>
+								<p>Av. Dante Michelini, 585 - Jardim da Penha<br>
+								(27) 3204-6600<br>
+								<a href='http://www.bristolhotels.com.br/alameda-vitoria/hotel-overview.html' target='_blank'>www.bristolhotels.com.br</a></p>
+								<a href='https://secure.guestcentric.net/api/bg/book.php?startDay=09%2F01%2F2017&nrAdults=2&nrChildren=0&pc=&apikey=ece5bb9fce1d9330606d0768c69cffae&nrNights=2' target='_blank' class="de-button small reverse">
+                        			VERIFICAR DISPONIBILIDADE
+                   				</a>								
 							</div><!-- END of TITLE & EXCERPT -->
 						</div> <!-- END of ITEM -->
 
+<?php /*
 						<!-- ITEM -->
 						<div class="blog-wrapper col-md-4">
 							<!--PHOTO-ITEM-->
@@ -482,7 +513,7 @@ require_once "header.php";
 								<span><a href='http://www.accorhotels.com/gb/hotel-7437-ibis-vitoria-praia-de-camburi/index.shtml'>http://www.accorhotels.com/</span>
 							</div><!-- END of TITLE & EXCERPT -->
 						</div> <!-- END of ITEM -->
-
+*/ ?>
 						<!-- ITEM -->
 						<div class="blog-wrapper col-md-4">
 							<!--PHOTO-ITEM-->
@@ -500,32 +531,13 @@ require_once "header.php";
 								</div>
 								<h3>MERCURE VITORIA HOTEL</h3>
 								<p>R. Aleixo Netto, 1385 - Praia do Canto</p>
-								<p>(27) 3183-6000</p>
-								<span><a href='http://www.accorhotels.com/gb/hotel-5472-mercure-vitoria-hotel/index.shtml'>http://www.accorhotels.com/</span>
+								<p>(27) 3183-6000<br>
+								<a href='http://www.accorhotels.com/gb/hotel-5472-mercure-vitoria-hotel/index.shtml' target='_blank'>www.accorhotels.com</a></p>
+								<a href='https://secure.accorhotels.com/store/index.html#/en/rooms?dateIn=2017-09-01&children=&offerLocation=&nights=2&adults=1&offerId=&hotelCode=5472&domainId=www.accorhotels.com' target='_blank' class="de-button small reverse">
+                        			VERIFICAR DISPONIBILIDADE
+                   				</a>								
 							</div><!-- END of TITLE & EXCERPT -->
 						</div> <!-- END of ITEM -->						
-
-						<!-- ITEM -->
-						<div class="blog-wrapper col-md-4">
-							<!--PHOTO-ITEM-->
-							<div class="photo-item animation fadeIn">
-								<!--PHOTO-->
-								<img src="images/wedding/hotel-Comfort-Suites-vitoria.jpg" alt="" class="hover-animation image-zoom-in">
-								<!--PHOTO OVERLAY-->
-								<div class="layer wh100 hidden-black-overlay hover-animation fade-in">
-								</div><!--END of PHOTO OVERLAY-->
-							</div><!--END of PHOTO-ITEM--> 
-							<!-- TITLE & EXCERPT -->
-							<div class="title-excerpt animation fadeIn">
-								<div class="de-icon circle very-small-size custom-heart-icon">
-									<i class="de-icon-heart"></i>
-								</div>
-								<h3>COMFORT SUITES VITÓRIA</h3>
-								<p>Av. Saturnino de Brito, 1327 - Santa Helena</p>
-								<p>(27) 3183-2500</p>
-								<span><a href='http://www.atlanticahotels.com.br/hotel/vitoria/comfort-suites-vitoria'>http://www.atlanticahotels.com.br/</a></span>
-							</div><!-- END of TITLE & EXCERPT -->
-						</div> <!-- END of ITEM -->	
 
 					</div>
 

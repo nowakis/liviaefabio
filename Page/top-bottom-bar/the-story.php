@@ -98,7 +98,7 @@ require_once 'header.php';
                         	Estávamos em uma viagem de férias num cruzeiro em Miami, lugar onde a partir do primeiro olhar na mesma mesa de jantar o encanto começou. Foram dias de convívio, suficientes para termos certeza que nos encontraríamos de novo. 
 						</p>
 						<p>
-							E foi assim que, mesmo morando em Estados diferentes, com o amor tudo parecia fácil de ser contornado e não tivemos mais dívidas, oficializamos o namoro. 
+							E foi assim que, mesmo morando em Estados diferentes, com o amor tudo parecia fácil de ser contornado e não tivemos mais dúvidas, oficializamos o namoro. 
 						</p>
 						<p>
 							Em 2016 planejamos nossas férias juntos, foi uma viagem muito sonhada e o momento perfeito pra surgir o grande pedido..

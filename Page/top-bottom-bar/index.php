@@ -225,7 +225,7 @@ require_once 'header.php';
 							</div><!--END of PHOTO-ITEM-->  
                             
 							<div class="his-her-name couple-excerpt animation fadeInRight">
-                        		<h2 class="text-center">Fabio<span class="last-name">Nowaki</span></h2>                                 
+                        		<h2 class="text-center">Fábio<span class="last-name">Nowaki</span></h2>                                 
                             </div> 
                             
                         </div>
