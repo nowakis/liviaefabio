@@ -155,6 +155,11 @@ require_once "header.php";
                 
 					<?php foreach ($decoded as $item) { ?>
 
+					<?php
+						//sem estoque
+						if ($item->quantidade <=0) continue;
+					?>
+
 
                     <!-- BLOG ITEM-6 -->
                		<div class="blog-wrapper col-md-3">

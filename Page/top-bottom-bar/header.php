@@ -133,15 +133,15 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
                         </li>
 
                     	<li>
-                        	<a href="vitoria.php">VITÓRIA-ES</a>
+							<a href="location.php">QUANDO E ONDE</a>
 						</li>
 
                     	<li class="first-child split-margin" >
-							<a href="location.php">QUANDO E ONDE</a>
+                        	<a href="vitoria.php">VITÓRIA-ES</a>
                         </li>
 
                         <li>
-                        	<a href="gift.php">PRESENTES</a>
+                        	<a href="gift.php">LISTA DE PRESENTES</a>
                         </li>
 
                     	<li>
