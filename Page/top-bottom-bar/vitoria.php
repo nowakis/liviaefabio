@@ -419,11 +419,11 @@ require_once "header.php";
 
 
 					<!-- PARAGRAPH LEAD TITLE -->
-					<div class="row">
+					<div class="row" >
 						<div class="col-md-offset-3 col-md-6 text-center">
 					
 							<div class="section-title">
-								<h2>HOSPEDAGEM</h2>
+								<h2 id="accommodation">HOSPEDAGEM</h2>
 														
 								<div class="heart-divider">
 									<span class="grey-line"></span>
@@ -454,7 +454,7 @@ require_once "header.php";
 								<div class="de-icon circle very-small-size custom-heart-icon">
 									<i class="de-icon-heart"></i>
 								</div>
-								<h3>COMFORT SUITES VITÓRIA <span class='pink-dot subtitle'>Indicado dos Noivos</span></h3>
+								<h3>COMFORT SUITES VITÓRIA <span class='pink-dot subtitle'>Indicado pelos Noivos</span></h3>
 								<p>Hotel na melhor localização em Vitória</p>
 								<p>Av. Saturnino de Brito, 1327 - Santa Helena<br>
 								<span>(27) 3183-2500</span><br>
@@ -487,7 +487,7 @@ require_once "header.php";
 								<a href='http://www.bristolhotels.com.br/alameda-vitoria/hotel-overview.html' target='_blank'>www.bristolhotels.com.br</a></p>
 								<a href='https://secure.guestcentric.net/api/bg/book.php?startDay=09%2F01%2F2017&nrAdults=2&nrChildren=0&pc=&apikey=ece5bb9fce1d9330606d0768c69cffae&nrNights=2' target='_blank' class="de-button small reverse">
                         			VERIFICAR DISPONIBILIDADE
-                   				</a>								
+                   				</a>						
 							</div><!-- END of TITLE & EXCERPT -->
 						</div> <!-- END of ITEM -->
 
@@ -542,7 +542,7 @@ require_once "header.php";
 					</div>
 
 					<!-- PARAGRAPH LEAD TITLE -->
-					<div class="row">
+					<div class="row" id="flights">
 						<div class="col-md-offset-3 col-md-6 text-center">
 					
 							<div class="section-title">

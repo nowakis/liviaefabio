@@ -120,7 +120,7 @@ require_once 'header.php';
  						</div> 
 						               
                         <div class="form-group">
-    						<label for="message">DEIXE SUA MENSAGEM</label>
+    						<label for="message">DEIXE SUA MENSAGEM (opcional)</label>
     						<textarea id="message" class="form-control ajax-input" rows="4" data-output-label="Output Message"></textarea>
  						</div>       
                         
