@@ -555,7 +555,7 @@ require_once "header.php";
 									<span class="grey-line"></span>
 								</div>
 
-								<p>Separamos algumas opções de voos para Vitória. Uma dica é comprar passagens nos finais de semana, há sempre promoções.</p>
+								<p>Separamos algumas opções de voos para Vitória.</p>
 							</div>
 						
 						</div>
@@ -568,14 +568,14 @@ require_once "header.php";
                             	<i class="de-icon-flight"></i>
                             </div>
 							<h3 class="inline text-center"><a href='https://goo.gl/flights/o2IE' target='_blank'>SÃO PAULO x VITÓRIA</a></h3>
-							<p>LATAM e GOL tem voos diários de Congonhas para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos.</a></p>
+							<p>LATAM e GOL oferecem voos diários de Congonhas para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos.</a></p>
                 		</div>
                     	<div class="col-md-5">
                         	<div class="de-icon circle medium-size inline">
                             	<i class="de-icon-flight"></i>
                             </div>
                       		<h3 class="inline text-center"><a href='https://www.google.com.br/flights/#search;f=MII;t=VIX;d=2017-09-01;r=2017-09-03;eo=c' target="_blank">MARÍLIA X VITÓRIA</a></h3>
-                           	<p>Os voos de Marília tem conexão em Campinas através da Azul. São duas opções: as 6h00 e as 11h09.</p>
+                           	<p>Os voos de Marília tem conexão em Campinas através da Azul. São duas opções: às 6h00 e às 11h09.</p>
                 		</div>
 					</div><!-- END of FLOAT ICON -->
 
@@ -586,14 +586,14 @@ require_once "header.php";
                             	<i class="de-icon-flight"></i>
                             </div>
 							<h3 class="inline text-center"><a href='https://goo.gl/flights/o2IE' target='_blank'>BRASILIA x VITÓRIA</a></h3>
-							<p>LATAM e GOL tem voos diários de Brasília para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos</a>.</p>
+							<p>LATAM e GOL oferecem voos diários de Brasília para Vitória. <a href='https://goo.gl/flights/o2IE' target='_blank'>Veja algumas opções de voos</a>.</p>
                 		</div>
                     	<div class="col-md-5">
                         	<div class="de-icon circle medium-size inline">
                             	<i class="de-icon-flight"></i>
                             </div>
                       		<h3 class="inline text-center"><a href='https://www.google.com.br/flights/#search;f=VCP;t=VIX;d=2017-09-01;r=2017-09-03;eo=c' target="_blank">CAMPINAS X VITÓRIA</a></h3>
-                           	<p>A Azul oferece voos diários de Campinas. Dica: há ônibus gratuito da Azul de São Paulo para Viracopos gratuito. <a href='https://www.voeazul.com.br/experiencia-azul/onibus-azul' target='_blank'>Conferir horários dos ônibus.</a></p>
+                           	<p>A Azul oferece voos diários de Campinas. Dica: há ônibus gratuito da Azul de São Paulo para Viracopos. <a href='https://www.voeazul.com.br/experiencia-azul/onibus-azul' target='_blank'>Clique aqui para conferir os horários dos ônibus.</a></p>
                 		</div>
 					</div><!-- END of FLOAT ICON -->								
 
