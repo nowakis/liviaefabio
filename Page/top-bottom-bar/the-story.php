@@ -159,7 +159,7 @@ require_once 'header.php';
                     <div class="col-md-12 text-center">
               			
                       	<div class="page-subtitle animation fadeIn">	
-							<h2 class="animation fadeIn">E ELA DISSE "<span style="color:#f0394d">SIM</span>!"</h2>
+							<h2 class="animation fadeIn">E ELA DISSE "<span style="color:#f0394d">SIM</span>"!</h2>
                       		<div class="heart-divider">
                      			<span class="grey-line"></span>
                          		<i class="de-icon-heart pink-heart"></i>
