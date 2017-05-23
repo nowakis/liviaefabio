@@ -103,7 +103,7 @@ require_once 'header.php';
     						<label for="phone">*TELEFONE</label>
                             <div class="input-group">
                             	<div class="input-group-addon"><i class="de-icon-heart-empty"></i></div>
-    							<input type="text" id="phone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
+    							<input type="phone" id="phone"  class="form-control ajax-input" placeholder="" data-required="Telefone obrigatório" data-output-label="Telefone">
                           	</div>
  						</div>                                                
                         <div class="form-group">
