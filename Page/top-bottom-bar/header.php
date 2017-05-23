@@ -100,7 +100,7 @@ if ($_SERVER['SCRIPT_NAME'] == '/gallery.php') {
                     <!-- LOGO -->
             		<div class="logo-wrapper">
                 		<!-- CSS LOGO --> 
-                        <a href="index.html">
+                        <a href="/">
                     		<div class="css-logo rounded">
                    				<div class="css-logo-text">
                         			<strong>L</strong><i class="de-icon-heart-1"></i><strong>F</strong>
