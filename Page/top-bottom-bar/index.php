@@ -445,7 +445,7 @@ require_once 'header.php';
                                         <!-- TITLE & EXCERPT -->
                                         <div class="title-excerpt">
                                         	<h3><a href="vitoria.php#accommodation">HOSPEDAGEM E VOOS</a></h3>
-                                            <p>Separamos algumas opções de <a href='vitoria.php#accommodation'>hospedagem</a> e <a href='vitoria.php#flights'>passagens aéreas</a> para para quem não é de Vitória</p>
+                                            <p>Separamos algumas opções de <a href='vitoria.php#accommodation'>hospedagem</a> e <a href='vitoria.php#flights'>passagens aéreas</a> para quem não é de Vitória</p>
                                         </div>
                                         <!-- END of TITLE & EXCERPT -->
                                         
