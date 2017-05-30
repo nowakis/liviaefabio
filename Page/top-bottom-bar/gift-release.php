@@ -48,7 +48,7 @@ require_once "header.php";
                         				</div>
 										
 										<p>
-											Se você quiser nos presentear, escolha um dos itens da Lista de Casamento. Mesmo sendo passeios ou outros itens, vamos receber em dinheiro. 
+											Se você quiser nos presentear, escolha um dos itens da Lista de Casamento. 
                                     	</p>
                                         
                                         <a href="#content" class="smooth-scroll">                                        	
