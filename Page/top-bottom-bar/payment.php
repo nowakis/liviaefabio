@@ -41,12 +41,15 @@ function randHash($len=32)
 	$signature = API_KEY.'~'.MERCHANT_ID."~".$referenceCode."~".$product->valor."~BRL";
 	$signature = md5($signature);
 
+	$phone = trim($_POST['phone']);
+	$phone = preg_replace( '/[^0-9]/', '', $phone );
+
 	/* PEDIDO */
 	$data = array(
 				"referenceCode" => $referenceCode,
 				"description" => 'Compra do presente '.$product->nome,
 				"buyerName" => trim($_POST['name']),
-				"buyerPhone" => trim($_POST['phone']),
+				"buyerPhone" => $phone,
 				"buyerEmail" => trim($_POST['email']),
 				"buyerMessage" => trim($_POST['message']),
 				"gift" => $product->id,
