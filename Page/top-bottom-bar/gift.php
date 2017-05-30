@@ -48,7 +48,7 @@ require_once "header.php";
                         				</div>
 										
 										<p>
-											Se você quiser nos presentear, escolha um dos itens da Lista de Casamento. 
+											Se você quiser nos presentear, escolha um dos itens da lista. 
                                     	</p>
                                         
                                         <a href="#content" class="smooth-scroll">                                        	
