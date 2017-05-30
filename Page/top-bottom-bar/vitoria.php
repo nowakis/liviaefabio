@@ -458,8 +458,8 @@ require_once "header.php";
 								<p>Hotel na melhor localização em Vitória</p>
 								<p>Av. Saturnino de Brito, 1327 - Santa Helena<br>
 								<span>(27) 3183-2500</span><br>
-								<a href='http://www.atlanticahotels.com.br/hotel/vitoria/comfort-suites-vitoria' target='_blank'>www.atlanticahotels.com.br</a></p>
-								<a href='https://myreservations.omnibees.com/default.aspx?q=4060&NRooms=1&ad=1&CheckIn=05052017&CheckOut=07052017&lang=pt-BR#/&diff=false&CheckIn=01092017&CheckOut=03092017&Code=&group_code=&loyality_card=&NRooms=1&ad=1&ch=0&ag=-' target='_blank' class="de-button small reverse">
+								<a href='https://www.booking.com/hotel/br/comfort-suites-vitoria.pt-br.html?aid=304142;label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaCCIAQGYATHCAQN4MTHIAQzYAQHoAQH4AQKSAgF5qAID;sid=ac083e228598777ca771637d9013125d;all_sr_blocks=130635703_101372411_0_1_0&checkin=2017-09-01&checkout=2017-09-03&dest_id=-679351&dest_type=city&dist=0&highlighted_blocks=130635703_101372411_0_1_0&hpos=1&raw_dest_type=hotel&room1=A%2CA&sb_price_type=total&srfid=85659cafbf0559921178d7c6e5a582f4028a52ecX1&type=total&ucfs=1&' target='_blank'>www.booking.com</a></p>
+								<a href='https://www.booking.com/hotel/br/comfort-suites-vitoria.pt-br.html?aid=304142;label=gen173nr-1FCAEoggJCAlhYSDNiBW5vcmVmaCCIAQGYATHCAQN4MTHIAQzYAQHoAQH4AQKSAgF5qAID;sid=ac083e228598777ca771637d9013125d;all_sr_blocks=130635703_101372411_0_1_0&checkin=2017-09-01&checkout=2017-09-03&dest_id=-679351&dest_type=city&dist=0&highlighted_blocks=130635703_101372411_0_1_0&hpos=1&raw_dest_type=hotel&room1=A%2CA&sb_price_type=total&srfid=85659cafbf0559921178d7c6e5a582f4028a52ecX1&type=total&ucfs=1&' target='_blank' class="de-button small reverse">
                         			VERIFICAR DISPONIBILIDADE
                    				</a>
 							</div><!-- END of TITLE & EXCERPT -->

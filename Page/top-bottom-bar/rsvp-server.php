@@ -29,8 +29,8 @@ require_once '/vagrant/config.php';
 					"participar" => $_POST['attended'], 					
 					"telefone" => $_POST['phone'], 					
 					"email" => $_POST['email'], 					
-					"convidados" => $_POST['guest'], 					
-					"mensagem" => $_POST['message'], 					
+					"convidados" => (isset($_POST['guest'])? $_POST['guest'] : null),
+					"mensagem" => (isset($_POST['message'])? $_POST['message'] : null),		
 		);
 
 		$data_string = json_encode($data);                    
